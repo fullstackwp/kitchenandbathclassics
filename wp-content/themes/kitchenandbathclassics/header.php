@@ -28,10 +28,13 @@
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-md-4 col">
+				<div class="col-md-3 col">
 					<div class="site-branding">
 						<?php
 						the_custom_logo();
+
+						
+
 						if ( is_front_page() && is_home() ) :
 							?>
 							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -48,7 +51,16 @@
 						<?php endif; ?>
 					</div><!-- .site-branding -->
 				</div>
-				<div class="col-md-8 col">
+				<div class="col-md-3 col">
+					<div class="site-branding">
+						<?php 
+						if( $secondary_logo = get_field( '_tapsbath_header_logo2', 'option' ) ):
+							echo sprintf( '<a href="%s">%s</a>', esc_url( site_url( '/' ) ), wp_get_attachment_image( $secondary_logo, 'full', false, array( 'class' => 'svg' ) ) );
+						endif;
+						?>
+					</div>
+				</div>
+				<div class="col-md-6 col">
 					<div class="main-menu-wrap">
 						<?php 
 						if( have_rows( '_tapsbath_book_consultation_header_button', 'option' ) ): 

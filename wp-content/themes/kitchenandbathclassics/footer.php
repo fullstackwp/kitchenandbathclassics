@@ -36,11 +36,26 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="row">
-				<?php if( $footer_logo = get_field( '_tapsbath_footer_logo', 'option' ) ): ?>
-					<div class="col-xl-6 col-lg-5 col-md-4">
+				<?php 
+				$footer_logo1 = get_field( '_tapsbath_footer_logo1', 'option' );
+				$footer_logo2 = get_field( '_tapsbath_footer_logo2', 'option' );
+				if( $footer_logo1 ): 
+				?>
+					<div class="col-xl-3 col-lg-3 col-md-2">
 						<a href="<?php echo esc_url( site_url('/') ); ?>">
-							<?php echo wp_get_attachment_image( $footer_logo, 'full', false, array( 'class' => 'svg' ) ); ?>
+							<?php echo wp_get_attachment_image( $footer_logo1, 'full', false, array( 'class' => 'svg' ) ); ?>
 						</a>
+					</div>
+				<?php 
+				endif;
+
+				if( $footer_logo2 ) :
+				?>
+					<div class="col-xl-3 col-lg-2 col-md-2">
+						<a href="<?php echo esc_url( site_url('/') ); ?>">
+							<?php echo wp_get_attachment_image( $footer_logo2, 'full', false, array( 'class' => 'svg' ) ); ?>
+						</a>
+
 					</div>
 				<?php endif; ?>
 
