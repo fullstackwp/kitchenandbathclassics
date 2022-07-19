@@ -1,0 +1,894 @@
+.error404{
+	.error-404{
+		height: 70vh;
+		position: relative;
+		padding-top: 200px;
+        min-height: 560px;
+		header{
+			margin-bottom: 80px;
+			position: relative;
+			border: 0;
+			@include breakpoint(medium){
+				margin-bottom: 70px;
+			}
+			@include breakpoint(small){
+				margin-bottom: 50px;
+				padding: 0 5px;
+			}
+			&:before{
+				content: '';
+                background-color: $color__evergreen;
+				width: 100%;
+				height: 1px;
+				position: absolute;
+				bottom: -20px;
+				max-width: 1369px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+			h1{
+                font-family: $font__title;
+				font-size: 50px;
+				font-weight: bold;
+				line-height: 0.9;
+				letter-spacing: normal;
+				text-align: center;
+				color: $color__black;
+				margin-bottom: 50px;
+				@include breakpoint(wide){
+					font-size: 48px;
+					margin-bottom: 45px;
+				}
+				@include breakpoint(medium){
+					font-size: 44px;
+					margin-bottom: 30px;
+				}
+				@include breakpoint(small){
+					font-size: 34px;
+					margin-bottom: 20px;
+					line-height: 1.2;
+				}
+			}
+
+		}
+		.page-content{
+			p{
+				font-size: 18px;
+				font-weight: normal;
+				line-height: 1.4;
+				letter-spacing: normal;
+				text-align: center;
+				color: $color__black;	
+				@include breakpoint(small){
+					font-size: 16px;
+				}
+			}
+			form{
+				width: 60%;
+				margin: 50px auto 20px;
+				@include breakpoint(medium){
+					width: 80%;
+				}
+				@include breakpoint(small){
+					width: 100%;
+					margin: 30px auto 20px;
+				}
+				&:after{
+					content: '';
+					display: table;
+					clear: both;
+				}
+				label{
+					width: 65%;
+					float: left;
+					@include breakpoint(extrasmall){
+						width: 100%;
+					}
+				}
+				input[type="search"]{
+                    border: 2px solid  $color__brownish_grey;
+                    border-radius: 0;
+					background-color: transparent;
+					font-size: 14px;
+					width: 100%;
+                    padding: 17px 20px 13px;
+					line-height: 1.5;
+                    color: $color__evergreen;
+					&:focus{
+						outline: none;
+					}
+					&::-webkit-input-placeholder{
+					    color: $color__evergreen;
+					}
+					&:-moz-placeholder{
+					    color: $color__evergreen;
+					}
+					&::-moz-placeholder{
+					    color: $color__evergreen;
+					}
+					&:-ms-input-placeholder{
+					    color: $color__evergreen;
+					}
+				}
+				input[type="submit"]{
+					color:$color__white;
+					width: 30%;
+					float: right;
+                    background-color: $color__deep_red;
+                    border: 1px solid $color__deep_red;
+					font-size: 14px;
+					font-weight: 600;
+                    text-transform: uppercase;
+					line-height: 1.94;
+					transition: all 0.6s;
+                    padding: 14px 65px 10px 66px;
+                    border-radius: 60px;
+					@include breakpoint(extrasmall){
+						width: 100%;
+						margin-top: 20px;
+					}
+					&:visited,
+					&:focus{
+                        color: $color__white;
+                        background-color: $color__deep_red;
+                        border: 1px solid $color__deep_red;
+					}
+					&:hover{
+                        background-color: $color__evergreen;
+                        color: $color__white;
+						text-decoration: none;
+                        &:visited,
+                        &:focus{
+                            background-color: $color__evergreen;
+                            color: $color__white;
+                        }
+					}
+				}
+			}
+		}
+	}
+}
+
+.search-no-results{
+	.no-results{
+		height: 70vh;
+		position: relative;
+		padding-top: 200px;
+		header{
+			position: relative;
+			border: 0;
+			&:before{
+				content: '';
+                background-color: $color__evergreen;
+				width: 100%;
+				height: 1px;
+				position: absolute;
+				bottom: -20px;
+				max-width: 1369px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+			h1{				
+                font-family: $font__title;
+				font-size: 50px;
+				font-weight: bold;
+				line-height: 0.9;
+				letter-spacing: normal;
+				text-align: center;
+				color: $color__black;
+				margin-bottom: 50px;
+				@include breakpoint(wide){
+					font-size: 48px;
+					margin-bottom: 45px;
+				}
+				@include breakpoint(medium){
+					font-size: 44px;
+					margin-bottom: 30px;
+				}
+				@include breakpoint(small){
+					font-size: 34px;
+					margin-bottom: 20px;
+					line-height: 1.2;
+				}
+			}
+
+		}
+		.page-content{
+			p{
+				font-size: 18px;
+				font-weight: normal;
+				line-height: 1.4;
+				letter-spacing: normal;
+				text-align: center;
+				color: $color__black;
+				@include breakpoint(small){
+					font-size: 16px;
+				}
+			}
+
+			form{
+				width: 60%;
+				margin: 50px auto 20px;
+				@include breakpoint(medium){
+					width: 80%;
+				}
+				@include breakpoint(small){
+					width: 100%;
+				}
+				&:after{
+					content: '';
+					display: table;
+					clear: both;
+				}
+				label{
+					width: 65%;
+					float: left;
+					@include breakpoint(extrasmall){
+						width: 100%;
+					}
+				}
+				input[type="search"]{
+                    border: 2px solid $color__brownish_grey;
+                    border-radius: 0;
+					background-color: transparent;
+					font-size: 14px;
+					width: 100%;
+                    padding: 17px 20px 13px;
+					line-height: 1.5;
+                    color: $color__evergreen;
+					&:focus{
+						outline: none;
+					}
+					&::-webkit-input-placeholder{
+					    color: $color__evergreen;
+					}
+					&:-moz-placeholder{
+					    color: $color__evergreen;
+					}
+					&::-moz-placeholder{
+					    color: $color__evergreen;
+					}
+					&:-ms-input-placeholder{
+					    color: $color__evergreen;
+					}
+				}
+				input[type="submit"]{
+					color:$color__white;
+					width: 30%;
+					float: right;
+                    background-color: $color__deep_red;
+                    border: 1px solid $color__deep_red;
+					font-size: 14px;
+					font-weight: 600;
+                    text-transform: uppercase;
+					line-height: 1.94;
+					transition: all 0.6s;
+                    padding: 14px 65px 10px 66px;
+                    border-radius: 60px;
+					@include breakpoint(extrasmall){
+						width: 100%;
+						margin-top: 20px;
+					}
+					&:visited,
+					&:focus{
+                        color: $color__white;
+                        background-color: $color__deep_red;
+                        border: 1px solid $color__deep_red;
+					}
+					&:hover{
+                        background-color: $color__evergreen;
+                        color: $color__white;
+						text-decoration: none;
+                        &:visited,
+                        &:focus{
+                            background-color: $color__evergreen;
+                            color: $color__white;
+                        }
+					}
+				}
+			}
+		}
+	}
+}
+.search-results{
+	.page-header{
+		position: relative;
+		padding-top: 200px;
+		margin:0;
+		border: 0;
+		&:before{
+			content: '';
+            background-color: $color__evergreen;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			bottom: -20px;
+			max-width: 1369px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+		h1{
+            font-family: $font__title;
+			font-size: 50px;
+			font-weight: bold;
+			line-height: 0.9;
+			letter-spacing: normal;
+			text-align: center;
+			color: $color__black;
+			margin-bottom: 50px;
+			@include breakpoint(wide){
+				font-size: 48px;
+				margin-bottom: 45px;
+			}
+			@include breakpoint(medium){
+				font-size: 44px;
+				margin-bottom: 30px;
+			}
+			@include breakpoint(small){
+				font-size: 34px;
+				margin-bottom: 20px;
+				line-height: 1.2;
+			}
+		}
+	}
+	article{
+		// background-color: $color__white;
+		@include breakpoint(small){
+			padding: 0 5px;
+		}
+		&:last-child{
+			margin-bottom: 80px;
+		}
+		.entry-header{
+			h2{
+				a{
+                    font-family: $font__title;
+					font-size: 32px;
+					font-weight: normal;
+					line-height: 1.4;
+					letter-spacing: normal;
+					text-align: left;
+					color: $color__black;	
+                    text-decoration: none;
+					@include breakpoint(medium){
+						font-size: 28px;
+					}
+					@include breakpoint(small){
+						font-size: 24px;
+					}
+					@include breakpoint(smaller){
+						font-size: 22px;
+					}
+                    &:hover{
+                        text-decoration: underline;
+                    }		
+				}
+			}
+            .entry-meta{
+                margin-top: 20px;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 2.22;
+                letter-spacing: -0.54px;
+                text-align: left;
+                color: $color__evergreen;
+                .posted-on{
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 1.83;
+                    letter-spacing: normal;
+                    color: $color__evergreen;
+                    a{
+                        color: $color__black;
+                        text-decoration: none;
+                        &:hover{
+                            color: $color__evergreen;
+                        }
+                    }
+                }
+                .byline{
+                    font-style: italic;
+                }
+            }
+		}
+		.entry-summary{
+			p{				
+				font-size: 18px;
+				font-weight: normal;
+				line-height: 1.4;
+				letter-spacing: normal;
+				text-align: left;
+				color: $color__black;
+				@include breakpoint(small){
+					font-size: 16px;
+				}
+			}
+		}
+        .entry-footer{
+            .cat-links{
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.83;
+                letter-spacing: normal;
+                color: $color__evergreen;
+                a{
+                    color: $color__evergreen;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color__evergreen;
+                    }
+                }
+            }
+            .comments-link{
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.83;
+                letter-spacing: normal;
+                color: $color__evergreen;
+                margin-left: 10px;
+                a{
+                    color: $color__evergreen;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color__evergreen;
+                    }
+                }
+            }
+        }
+	}
+	.posts-navigation{
+		padding-bottom: 80px;
+		.nav-links{
+			.nav-previous{
+				a{
+					float: left;
+				}
+			}
+			.nav-next{
+				a{
+					float: right;
+				}
+			}
+
+			a{
+                background-color: $color__evergreen;
+                border: 1px solid $color__evergreen;
+                color: $color__white;
+                float: right;
+                padding: 10px 25px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.94;
+                transition: all 0.3s;
+                border-radius: 40px;
+                text-align: center;
+                text-decoration: none;
+                @include breakpoint(extrasmall){
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                &:hover{
+                    background-color: transparent;
+                    border-color: $color__evergreen;
+                    color: $color__evergreen;
+                    text-decoration: none;
+                    &:visited,
+                    &:focus{
+                        background-color: transparent;
+                        border-color: $color__evergreen;
+                        color: $color__evergreen;
+                    }
+                }
+                &:visited,
+                &:focus{
+                    color:$color__white;
+                }
+			}
+			
+		}
+	}
+}
+.single{
+	#page{
+		overflow: visible;
+	}
+	.share-sticky-wrap{
+		position: sticky;
+		// top: 90px;
+		top: 110px;
+		@include breakpoint(wide){
+			top: 140px;
+		}
+		@include breakpoint(small){
+			position: relative;
+			left: 0;
+			top: 0;
+		}
+		.share-wrap{
+			position: absolute;
+			top: 0;
+			left: -90px;
+			@include breakpoint(medium){
+				left: -45px;
+			}
+			@include breakpoint(small){
+				position: relative;
+				left: 0;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 20px;
+			}
+			h3{
+				font-size: 18px;
+				font-weight: normal;
+				line-height: 1;
+				letter-spacing: normal;
+				text-align: center;
+				color: $color__evergreen;
+				@include breakpoint(small){
+					margin-bottom: 0;
+					margin-right: 10px;
+				}
+			}
+			.heateor_sss_sharing_container{
+				@media only screen and (min-width: 768px){
+					width: 42px;
+				}
+			}
+			ul{
+				margin: 20px 0 0;
+				padding: 0;
+				@include breakpoint(small){
+					display: flex;
+					flex-wrap: wrap;
+					margin: 0;
+				}
+				li{
+					list-style: none;
+					margin-bottom: 10px;
+					@include breakpoint(small){
+						padding: 0 10px;
+						margin: 0;
+					}
+					a{
+						.svg{
+							rect,
+							path{
+								transition: all 0.6s;
+							}
+						}
+						&:hover{
+							.svg{
+								rect,
+								path{
+									fill: $color__black;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	article{
+		padding-top: 200px;
+        padding-bottom: 100px;
+        .entry-header{
+            h1{
+                color: $color__evergreen;
+            }
+        }
+        .entry-meta{
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 2.22;
+            letter-spacing: -0.54px;
+            text-align: left;
+            color: $color__evergreen;
+            .posted-on{
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.83;
+                letter-spacing: normal;
+                color: $color__evergreen;
+                a{
+                    color: $color__black;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color__evergreen;
+                    }
+                }
+            }
+            .byline{
+                font-style: italic;
+            }
+        }
+		.entry-content{
+			.image-wrap{
+				margin-bottom: 50px;
+			}
+			.title-wrap{
+				h2{
+					text-align: left;
+				}
+			}
+
+			>p{
+				font-size: 16px;
+				font-weight: normal;
+				line-height: 1.4;
+				letter-spacing: normal;
+				color: $color__black;
+				@include breakpoint(small){
+					font-size: 14px;
+				}
+			}
+			>ul {
+				li{
+					font-size: 18px;
+					font-weight: normal;
+					line-height: 1.4;
+					letter-spacing: normal;
+					color: $color__black;
+					@include breakpoint(small){
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+        .entry-footer{
+            .cat-links{
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.83;
+                letter-spacing: normal;
+                color: $color__evergreen;
+                a{
+                    color: $color__evergreen;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color__evergreen;
+                    }
+                }
+            }
+            .comments-link{
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.83;
+                letter-spacing: normal;
+                color: $color__evergreen;
+                margin-left: 10px;
+                a{
+                    color: $color__evergreen;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color__evergreen;
+                    }
+                }
+            }
+        }
+	}
+	.post-navigation{
+		padding-bottom: 200px;
+		@include breakpoint(wide){
+			padding-bottom: 100px;
+		}
+		@include breakpoint(small){
+			padding-bottom: 70px;
+		}
+		.nav-links{
+			@include breakpoint(extrasmall){
+				display: block;
+			}
+			.nav-previous,
+			.nav-next{
+				@include breakpoint(extrasmall){
+					float: none;
+					width: 100%;
+				}
+				a{
+					color:$color__white;
+                    background-color: $color__evergreen;
+                    border: 2px solid $color__evergreen;
+					font-size: 14px;
+					font-weight: bold;
+                    text-transform: uppercase;
+					line-height: 1.94;
+					transition: all 0.6s;
+                    padding: 14px 65px 10px 66px;
+                    border-radius: 0;
+					position: relative;
+					z-index: 1;
+					@include breakpoint(extrasmall){
+						width: 100%;
+						margin-top: 20px;
+						text-align: center;
+					}
+					&:visited,
+					&:focus{
+                        color: $color__white;
+                        background-color: $color__evergreen;
+					}
+					&:hover{
+                        background-color: transparent;
+                        color: $color__evergreen;
+                        border-radius: 19.5px;
+						text-decoration: none;
+                        &:visited,
+                        &:focus{
+                            background-color: transparent;
+                            color: $color__evergreen;
+                        }
+					}
+				}
+			}
+			.nav-next{
+				a{
+					float: right;
+				}
+			}
+			.nav-previous{
+				a{
+					float: left;
+				}
+			}
+		}
+	}
+	.center-content-wrapper{
+		.heading{
+			margin-bottom: 50px;
+			h3{
+				font-size: 40px;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: center;
+				color: $color__evergreen;
+				@include breakpoint(wide){
+					font-size: 38px;
+				}
+				@include breakpoint(medium){
+					font-size: 34px;
+				}
+				@include breakpoint(small){
+					font-size: 32px;
+				}
+				@include breakpoint(extrasmall){
+					font-size: 30px;
+					line-height: 1;
+				}
+			}
+			.post-meta{
+				position: relative;
+				&:after{
+					content: '';
+					background-color: $color__evergreen;
+					width: 224px;
+					height: 2px;
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					bottom: -10px;
+				}
+				p{
+					font-size: 18px;
+					font-weight: normal;
+					line-height: 1.67;
+					letter-spacing: normal;
+					text-align: center;
+					color: $color__evergreen;
+				}
+			}
+		}
+		.featured-img{
+			margin-bottom: 20px;
+			img{
+				width: 100%;
+			}
+		}
+		.post-content{
+			font-size: 18px;
+			font-weight: normal;
+			line-height: 1.67;
+			letter-spacing: normal;
+			text-align: left;
+			color: $color__evergreen;
+			p{
+				font-size: 18px;
+				font-weight: normal;
+				line-height: 1.67;
+				letter-spacing: normal;
+				text-align: left;
+				color: $color__evergreen;
+			}
+		}
+	}
+	.blog-content-wrapper{
+		.title-wrap{
+			h2{
+				font-size: 36px;
+				color: $color__evergreen;
+				@include breakpoint(medium){
+					font-size: 34px;
+				}
+				@include breakpoint(small){
+					font-size: 32px;
+				}
+				@include breakpoint(extrasmall){
+					font-size: 30px;
+				}
+			}
+		}
+		.blog-content-wrap{
+			.blog-wrap{
+				max-width: 33.33%;
+				flex: 0 0 33.33%;
+				@include breakpoint(small){
+					max-width: 100%;
+					flex: 0 0 100%;
+				}
+			}
+		}
+	}
+}
+.page{
+	#primary{
+		padding-top: 200px;
+		padding-bottom: 100px;
+		.entry-header{
+			h1{
+				font-family: $font__title;
+				font-size: 55px;
+				font-weight: normal;
+				font-style: italic;
+				line-height: 1;
+				letter-spacing: normal;
+				color: $color__evergreen;
+				@include breakpoint(wide){
+					font-size: 50px;
+				}
+				@include breakpoint(medium){
+					font-size: 40px;
+				}
+			}
+		}
+		.entry-content{
+			p{
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 1.86;
+				letter-spacing: normal;
+				color: $color__evergreen;
+			}
+			ul{
+				margin-left: 0;
+				padding-left: 10px;
+				li{
+					font-size: 14px;
+					font-weight: 300;
+					line-height: 1.86;
+					letter-spacing: normal;
+					color: $color__evergreen;
+				}
+			}
+			ol{
+				margin-left: 0;
+				padding-left: 10px;
+				li{
+					font-size: 14px;
+					font-weight: 300;
+					line-height: 1.86;
+					letter-spacing: normal;
+					color: $color__evergreen;
+				}
+			}
+		}
+	}
+}

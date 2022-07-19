@@ -1,0 +1,30 @@
+#masthead{
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: $color__white;
+    .site-branding{
+        position: relative;
+        z-index: 9;
+        a{
+            @include breakpoint(small){
+                width: 100px;
+            }
+        }
+    }
+    .header-button{
+        position: relative;
+        z-index: 9;
+        @include breakpoint(small){
+            display: none;
+        }
+    }
+}
+.logged-in{
+    &.admin-bar{
+        #masthead{
+            top: 32px;
+        }
+    }
+}

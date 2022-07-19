@@ -1,0 +1,14 @@
+<svg id="dxv-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.71" height="47.016" viewBox="0 0 65.71 47.016">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1121" data-name="Rectangle 1121" width="65.71" height="47.016" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <path id="Path_1149" data-name="Path 1149" d="M83.462,23.472l2.111-3.564,2.112,3.564-2.112,3.574ZM101.546,0,89.41,20.552,87.3,16.987,97.368,0H93.873l-8.3,14.053L77.271,0H73.78L83.843,16.985l-2.107,3.566L69.6,0H66.107l13.9,23.471-13.9,23.544h3.408l12.221-20.63,2.117,3.573L73.78,47.016h3.409l8.384-14.153,8.383,14.153h3.411L87.293,29.959l2.118-3.573,12.219,20.63h3.41L91.135,23.472,105.04,0Z" transform="translate(-53.599 -0.001)" fill="#fff"/>
+  <g id="Group_3157" data-name="Group 3157">
+    <g id="Group_3156" data-name="Group 3156" clip-path="url(#clip-path)">
+      <path id="Path_1150" data-name="Path 1150" d="M16.6,70.95c0-8.186-5-12.089-10.5-12.089H0V83.039H6.1c5.5,0,10.5-3.9,10.5-12.088m-10.99,9.17H3.373V61.779H5.607c4.093,0,7.5,2.728,7.5,9.171s-3.411,9.17-7.5,9.17" transform="translate(0 -47.724)" fill="#fff"/>
+      <path id="Path_1151" data-name="Path 1151" d="M269.208,73.716c-.53,1.705-1.023,3.714-1.515,5.647h-.077c-.493-1.97-1.022-4.017-1.515-5.647l-3.449-11.293h-3.486l7.58,24.4H268.3l7.541-24.4h-3.22Z" transform="translate(-210.13 -50.612)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

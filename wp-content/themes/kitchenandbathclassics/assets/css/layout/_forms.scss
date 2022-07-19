@@ -1,0 +1,175 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: $color__text-input;
+	border: 1px solid $color__border-input;
+	border-radius: 3px;
+	padding: 3px;
+
+	&:focus {
+		color: $color__text-input-focus;
+	}
+}
+
+select {
+	border: 1px solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+}
+.consultation-wrapper{
+	padding: 35px 0;
+	.hbspt-form{
+		fieldset{
+			margin-bottom: 20px;
+			@include breakpoint(small){
+				margin-bottom: 0;
+			}
+			h1{
+				font-family: $font__secondary;
+				font-size: 32px;
+				font-weight: 500;
+				line-height: 1.03;
+				letter-spacing: normal;
+				text-align: center;
+				color: $color__evergreen;
+                @include breakpoint(wide){
+                    font-size: 30px;
+                }
+				@include breakpoint(medium){
+					font-size: 26px;
+				}
+				@include breakpoint(small){
+					font-size: 22px;
+				}
+			}
+			h3{
+				padding: 0 15%;
+				text-align: center;
+				@include breakpoint(medium){
+					padding: 0 5%;
+				}
+				@include breakpoint(small){
+					padding: 0;
+				}
+				span{
+					font-size: 18px;
+					font-weight: normal;
+					line-height: 1.44;
+					letter-spacing: normal;
+					color: $color__black;
+					@include breakpoint(wide){
+						font-size: 16px;
+					}
+					@include breakpoint(medium){
+						font-size: 14px;
+					}
+				}
+				a{
+					color: $color__rusty_red;
+					text-decoration: none;
+					font-size: 18px;
+					font-weight: normal;
+					line-height: 1.44;
+					letter-spacing: normal;
+					@include breakpoint(wide){
+						font-size: 16px;
+					}
+					@include breakpoint(medium){
+						font-size: 14px;
+					}
+					&:hover{
+						color: $color__black;
+					}
+				}
+			}
+			p{
+				margin-bottom: 0;
+			}
+			span{
+				font-size: 15px;
+				font-weight: bold;
+				line-height: 1.45;
+				letter-spacing: normal;
+				text-align: left;
+				color: $color__greyish_brown;
+			}
+			.input{
+				
+				@include breakpoint(small){
+					margin-bottom: 10px;
+				}
+				input[type="text"],
+				input[type="email"],
+				input[type="tel"],
+				input[type="date"],
+				select{
+					width: 100%;
+					border: 1px solid $color__brownish_grey;
+					padding: 10px !important;
+					border-radius: 0;
+					font-size: 14px;
+					min-height: inherit !important;
+				}
+				textarea{
+					border: 1px solid $color__brownish_grey;
+					padding: 10px !important;
+					border-radius: 0;
+					font-size: 14px;
+				}
+			}
+		}
+		.hs_submit{
+			.actions{
+				text-align: center;
+				input[type="submit"]{
+					background-color: $color__deep_red;
+					border: 1px solid $color__deep_red;
+					padding: 12px 65px;
+					border-radius: 22px;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: normal;
+					letter-spacing: normal;
+					text-align: center;
+					color: $color__white;
+					transition: all 0.6s;
+					@include breakpoint(small){
+						margin-top: 20px;
+					}
+					&:hover{
+						background-color: $color__evergreen;
+						border-color: $color__evergreen;
+						color: $color__white;
+						&:visited,
+						&:focus{
+							background-color: $color__evergreen;
+							border-color: $color__evergreen;
+							color: $color__white;
+						}
+					}
+					&:visited,
+					&:focus{
+						background-color: $color__deep_red;
+						border: 1px solid $color__deep_red;
+						color: $color__white;
+					}
+				}
+			}
+		}
+	}
+}
