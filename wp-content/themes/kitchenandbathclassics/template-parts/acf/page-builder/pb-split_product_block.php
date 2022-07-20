@@ -20,6 +20,8 @@ if( $_reverse_order ) {
     $_img_class  = "order-md-2";
 }
 
+$section_id        = ( get_sub_field( '_split_product_block_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_split_product_block_sectionid' ) ) : '';
+
 ?>
 
 <section class="image-description-wrapper <?php echo $_graphic_img; ?>">

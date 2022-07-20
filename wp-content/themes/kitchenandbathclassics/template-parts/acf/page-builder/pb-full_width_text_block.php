@@ -1,5 +1,8 @@
-<?php $center_align_class = ( get_sub_field( '_fullwidth_text_content_align' ) ) ? 'text-center' : false; ?>
-<section class="full-text-block-wrapper <?php echo $center_align_class; ?>">
+<?php 
+$center_align_class = ( get_sub_field( '_fullwidth_text_content_align' ) ) ? 'text-center' : false; 
+$section_id         = ( get_sub_field( '_fullwidth_text_content_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_fullwidth_text_content_sectionid' ) ) : '';
+?>
+<section <?php echo $section_id; ?> class="full-text-block-wrapper <?php echo $center_align_class; ?>">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

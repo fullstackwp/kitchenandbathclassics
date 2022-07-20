@@ -1,7 +1,7 @@
 <?php 
 $_column_size   = ( get_sub_field( '_product_row_list_col_size' ) ) ? get_sub_field( '_product_row_list_col_size' ) : 3;
 $_block_desc    = get_sub_field( '_product_row_list_block_description' );
-
+$section_id     = ( get_sub_field( '_product_row_list_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_product_row_list_sectionid' ) ) : '';
 if( have_rows( '_product_row_content') ) :
 ?>
     <section class="image-block-wrapper bb-1">

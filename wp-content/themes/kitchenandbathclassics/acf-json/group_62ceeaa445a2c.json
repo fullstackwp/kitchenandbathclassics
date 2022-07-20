@@ -23,6 +23,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62d80b07e6e73",
+                            "label": "Section ID",
+                            "name": "_banner_sectionid",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62ceeba464ac8",
                             "label": "Content Type",
                             "name": "_banner_imageorvideo",
@@ -360,6 +379,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62d80b2ee6e74",
+                            "label": "Section ID",
+                            "name": "_brand_card_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62cf18e958490",
                             "label": "Column Size",
                             "name": "_brand_card_column_size",
@@ -552,6 +590,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62d80b5ce6e75",
+                            "label": "Section ID",
+                            "name": "_brand_card_with_desc_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62d1a9a68c139",
                             "label": "Column Size",
                             "name": "_brand_card_with_desc_column_size",
@@ -689,6 +746,25 @@
                     "label": "Call to Action (CTA)",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_62d81367e6e78",
+                            "label": "Section ID",
+                            "name": "_cta_block_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_62d0289ad2e5a",
                             "label": "Block Background Color",
@@ -832,6 +908,25 @@
                     "label": "Full-Width Featured Product Block",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_62d80b90e6e76",
+                            "label": "Section ID",
+                            "name": "_fullwidth_featured_product_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_62d1a02fcd980",
                             "label": "Background Color",
@@ -1027,6 +1122,25 @@
                     "label": "Full-Width Image\/Video Block",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_62d813bf95d55",
+                            "label": "Section ID",
+                            "name": "fullwidth_imagevideo_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_62cf10b7af517",
                             "label": "Content Type",
@@ -1288,6 +1402,25 @@
                     "label": "Full-Width Image\/Video Block With Description",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_62d813e695d56",
+                            "label": "Section ID",
+                            "name": "_fullwidth_desc_imgvid_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_62d189458d9dc",
                             "label": "Content Type",
@@ -1574,6 +1707,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62d8142b95d57",
+                            "label": "Section ID",
+                            "name": "_testimonial_block_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62d0337366a92",
                             "label": "Block Background Color",
                             "name": "_testimonial_block_background_color",
@@ -1749,6 +1901,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62d8144595d58",
+                            "label": "Section ID",
+                            "name": "_fullwidth_text_content_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62cf00b0899f1",
                             "label": "Center Align Content",
                             "name": "_fullwidth_text_content_align",
@@ -1883,6 +2054,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62d8146c95d59",
+                            "label": "Section ID",
+                            "name": "_image_card_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62cf075fbbc8a",
                             "label": "Enable Border",
                             "name": "_image_card_section_border",
@@ -2015,6 +2205,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62d8149195d5a",
+                            "label": "Section ID",
+                            "name": "_logo_page_banner_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62d2f88f8224f",
                             "label": "Background Color",
                             "name": "_logo_page_banner_background_color",
@@ -2089,6 +2298,25 @@
                     "label": "Page Header",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_62d8150095d5b",
+                            "label": "Section ID",
+                            "name": "_page_header_content_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_62d062e245133",
                             "label": "Content Type",
@@ -2199,6 +2427,25 @@
                     "label": "Product Row List",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_62d8152695d5c",
+                            "label": "Section ID",
+                            "name": "_product_row_list_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_62d5ad7c02e73",
                             "label": "Column Size",
@@ -2317,6 +2564,25 @@
                     "label": "Split Content Block (Text + Image)",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_62d8154595d5d",
+                            "label": "Section ID",
+                            "name": "_split_text_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_62d06cd5c7113",
                             "label": "Content",
@@ -2443,6 +2709,25 @@
                     "label": "Split Product Block",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_62d815af95d5e",
+                            "label": "Section ID",
+                            "name": "_split_product_block_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_62d2fe08161fd",
                             "label": "Text-Image Split Ratio",
@@ -2656,6 +2941,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62d8163c95d5f",
+                            "label": "Section ID",
+                            "name": "_video_block_sectionid",
+                            "type": "text",
+                            "instructions": "Set ID for the section tag. Useful for implementing scroll to section functionality.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62d06713d718f",
                             "label": "Heading",
                             "name": "_video_heading",
@@ -2823,5 +3127,5 @@
     "active": true,
     "description": "Page builder for tapsbath theme.",
     "show_in_rest": 0,
-    "modified": 1658171051
+    "modified": 1658332268
 }

@@ -1,7 +1,8 @@
 <?php
 $media_type = get_sub_field( '_banner_imageorvideo' );
+$section_id = ( get_sub_field( '_banner_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_banner_sectionid' ) ) : '';
 ?>
-<section class="banner-wrapper">
+<section <?php echo $section_id; ?> class="banner-wrapper">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

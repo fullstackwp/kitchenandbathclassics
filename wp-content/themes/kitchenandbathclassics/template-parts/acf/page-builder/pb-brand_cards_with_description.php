@@ -1,6 +1,8 @@
 <?php 
 $column = get_sub_field( '_brand_card_with_desc_column_size' );
 
+$section_id = ( get_sub_field( '_brand_card_with_desc_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_brand_card_with_desc_sectionid' ) ) : '';
+
 if( 4 == $column ):
     $section_class = 'triple-block-description-link-wrapper';
 else:
@@ -9,7 +11,7 @@ endif;
 
 if( have_rows( '_brand_desc_cards' ) ): 
 ?>
-    <section class="<?php echo $section_class; ?>">
+    <section <?php echo $section_id; ?> class="<?php echo $section_class; ?>">
         <div class="container">
             <div class="row g-1">
                 <?php 

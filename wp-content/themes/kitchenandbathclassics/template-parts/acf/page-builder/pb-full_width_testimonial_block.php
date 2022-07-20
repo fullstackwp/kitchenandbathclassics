@@ -14,8 +14,10 @@ $classes[]            = ( get_sub_field( '_testimonial_text_color' ) ) ? get_sub
 if( $block_class = get_sub_field( '_testimonial_block_class' ) ) { //custom class added through backend
     $classes[] = $block_class;
 }
+
+$section_id         = ( get_sub_field( '_testimonial_block_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_testimonial_block_sectionid' ) ) : '';
 ?>
-<section class="testimonial-wrapper <?php echo implode( " ", $classes ); ?>" style="background-color:<?php echo $background_color; ?>;">
+<section <?php echo $section_id; ?> class="testimonial-wrapper <?php echo implode( " ", $classes ); ?>" style="background-color:<?php echo $background_color; ?>;">
     <div class="container">
         <div class="row">
             <div class="col-md-7">
