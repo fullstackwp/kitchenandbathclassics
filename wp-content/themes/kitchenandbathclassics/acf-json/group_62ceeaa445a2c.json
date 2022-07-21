@@ -411,6 +411,7 @@
                                 "id": ""
                             },
                             "choices": {
+                                "12": "1 Column Layout",
                                 "6": "2 Column Layout",
                                 "4": "3 Column Layout"
                             },
@@ -3127,5 +3128,5 @@
     "active": true,
     "description": "Page builder for tapsbath theme.",
     "show_in_rest": 0,
-    "modified": 1658332268
+    "modified": 1658423071
 }
