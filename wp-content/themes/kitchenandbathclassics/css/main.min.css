@@ -1357,7 +1357,6 @@ body.animation{opacity:1;visibility:visible}.site-title,.site-description{border
 }@media(max-width:767px){.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a .svg{height:16px}
 }.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a .svg path{fill:#fff}
 .image-description-wrapper .description-wrap .bottom-content-wrap .image-wrap{text-align:center}
-.image-description-wrapper .description-wrap .bottom-content-wrap .image-wrap img{display:block}
 .image-block-wrapper{padding:15px 0}.image-block-wrapper.bb-1 .container .row{border-bottom:1px solid #03363a;padding-bottom:20px}
 .image-block-wrapper.bt-1 .container .row{border-top:1px solid #03363a;padding-top:20px}
 .image-block-wrapper .col-md-15{flex:0 0 20%;max-width:20%}@media(max-width:991px){.image-block-wrapper .col-md-15{flex:0 0 33.33%;max-width:33.33%}
