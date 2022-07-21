@@ -26,7 +26,7 @@ $section_id        = ( get_sub_field( '_split_product_block_sectionid' ) ) ? spr
 
 <section class="image-description-wrapper <?php echo $_graphic_img; ?>">
     <div class="container">
-        <div class="row g-0">
+        <div class="row g-0" style="background-color: <?php echo $_background_color; ?>;">
             <div class="col-md-<?php echo $_img_col; ?> p-0 <?php echo $_img_class; ?>">
                 <?php if( $_main_img = get_sub_field( '_split_product_main_image' ) ): ?>
                     <div class="image-wrap">
@@ -35,7 +35,7 @@ $section_id        = ( get_sub_field( '_split_product_block_sectionid' ) ) ? spr
                 <?php endif; ?>
             </div>
             <div class="col-md-<?php echo $_text_col; ?> p-0 <?php echo $_text_class; ?>">
-                <div class="description-wrap" style="background-color: <?php echo $_background_color; ?>;">
+                <div class="description-wrap">
 
                     <?php if( $_graphic_img ): ?>
                         <div class="graphic">
