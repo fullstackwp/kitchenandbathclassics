@@ -1340,7 +1340,25 @@ body.animation{opacity:1;visibility:visible}.site-title,.site-description{border
 }.image-description-wrapper .description-wrap p{font-size:18px;font-weight:300;line-height:normal;letter-spacing:normal;text-align:center;color:#fff;position:relative}
 @media(max-width:1199px){.image-description-wrapper .description-wrap p{font-size:16px}
 }@media(max-width:767px){.image-description-wrapper .description-wrap p{font-size:14px}
-}.image-block-wrapper{padding:15px 0}.image-block-wrapper.bb-1 .container .row{border-bottom:1px solid #03363a;padding-bottom:20px}
+}.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap{margin-bottom:15px}
+.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h2,.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h2{font-family:"Montserrat",sans-serif;font-size:20px;font-weight:600;line-height:normal;letter-spacing:normal;text-align:center;color:#fff;margin-bottom:0}
+@media(max-width:1199px){.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h2,.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h2{font-size:18px}
+}@media(max-width:991px){.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h2,.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h2{font-size:16px}
+}.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h3,.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h3{font-family:"Montserrat",sans-serif;font-size:20px;font-weight:300;line-height:normal;letter-spacing:normal;text-align:center;color:#fff;margin-bottom:0}
+@media(max-width:1199px){.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h3,.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h3{font-size:18px}
+}@media(max-width:991px){.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h3,.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h3{font-size:16px}
+}.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap{margin-bottom:40px}
+.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a{margin-top:20px;font-size:14px;font-weight:600;line-height:1.14;letter-spacing:normal;color:#fff;text-decoration:none}
+@media(max-width:991px){.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a{font-size:12px}
+}@media(max-width:767px){.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a{font-size:14px}
+}.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a:hover .svg{left:8px}
+.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a .svg{width:8.5px;height:16px;position:relative;transition:all .6s;left:5px}
+@media(max-width:991px){.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a .svg{height:10px}
+}@media(max-width:767px){.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a .svg{height:16px}
+}.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a .svg path{fill:#fff}
+.image-description-wrapper .description-wrap .bottom-content-wrap .image-wrap{text-align:center}
+.image-description-wrapper .description-wrap .bottom-content-wrap .image-wrap img{display:block}
+.image-block-wrapper{padding:15px 0}.image-block-wrapper.bb-1 .container .row{border-bottom:1px solid #03363a;padding-bottom:20px}
 .image-block-wrapper.bt-1 .container .row{border-top:1px solid #03363a;padding-top:20px}
 .image-block-wrapper .col-md-15{flex:0 0 20%;max-width:20%}@media(max-width:991px){.image-block-wrapper .col-md-15{flex:0 0 33.33%;max-width:33.33%}
 }.image-block-wrapper .title-wrap{text-align:center}.image-block-wrapper .title-wrap h2,.image-block-wrapper .title-wrap .h2{font-family:"Montserrat",sans-serif;font-size:30px;font-weight:500;line-height:1.1;letter-spacing:normal}

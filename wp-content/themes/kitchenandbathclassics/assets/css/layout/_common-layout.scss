@@ -1644,6 +1644,88 @@ video{
                 font-size: 14px;
             }
         }
+        .bottom-content-wrap{
+            .title-wrap{
+                margin-bottom: 15px;
+                h2{
+                    font-family: $font__main;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: $color__white;
+                    margin-bottom: 0;
+                    @include breakpoint(wide){
+                        font-size: 18px;
+                    }
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                    }
+                }
+                h3{
+                    font-family: $font__main;
+                    font-size: 20px;
+                    font-weight: 300;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: $color__white;
+                    margin-bottom: 0;
+                    @include breakpoint(wide){
+                        font-size: 18px;
+                    }
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                    }
+                }
+            }
+            .link-wrap{
+                margin-bottom: 40px;
+                a{
+                    margin-top: 20px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 1.14;
+                    letter-spacing: normal;
+                    color: $color__white;
+                    text-decoration: none;
+                    @include breakpoint(medium){
+                        font-size: 12px;
+                    }
+                    @include breakpoint(small){
+                        font-size: 14px;
+                    }
+                    &:hover{
+                        .svg{
+                            left: 8px;
+                        }
+                    }
+                    .svg{
+                        width: 8.5px;
+                        height: 16px;
+                        position: relative;
+                        transition: all 0.6s;
+                        left: 5px;
+                        @include breakpoint(medium){
+                            height: 10px;
+                        }
+                        @include breakpoint(small){
+                            height: 16px;
+                        }
+                        path{
+                            fill: $color__white;
+                        }
+                    }
+                }
+            }
+            .image-wrap{
+                text-align: center;
+                img{
+                    display: block;
+                }
+            }
+        }
     }
 }
 .image-block-wrapper{
