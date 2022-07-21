@@ -77,4 +77,47 @@ jQuery(function ($) {
     $(window).resize(function () {
         mobile_menu();
     });
+
+    /* Scroll To A section  */
+    var scrollToSection = {
+        init: function () {
+            this.cacheDOM();
+            this.eventListener();
+            this.scrollToOnPageLoad();
+        },
+        cacheDOM: function () {
+            this.$htmlBody = $('html, body');
+            this.$scrollDownEl = $('a'); //target button
+        },
+        eventListener: function () {
+            this.$scrollDownEl.on('click', this.scrollDown.bind(this));
+        },
+        scrollDown: function (e) {
+            if ($(e.currentTarget).attr('href').indexOf("#") != -1) {
+                e.preventDefault();
+                var headerHeight = $("#masthead").outerHeight(true);
+                var target = $(e.currentTarget).attr('href');
+                var $target = $(target);
+                if ('undefined' != $target.length && $target.length) {
+                    this.$htmlBody.stop().animate({
+                        'scrollTop': $target.offset().top - headerHeight
+                    });
+                }
+            }
+        },
+        scrollToOnPageLoad: function () {
+            var pageURI = window.location.toString();
+            if (pageURI.indexOf("#") > 0) {
+                var hashValue = location.hash;
+                var clean_uri = pageURI.substring(0, pageURI.indexOf("#"));
+
+                window.history.replaceState({}, document.title, clean_uri);
+                this.$htmlBody.stop().animate({
+                    'scrollTop': $(hashValue).offset().top - 30
+                });
+            }
+        }
+    }
+    scrollToSection.init();
+
 });
