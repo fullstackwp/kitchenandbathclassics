@@ -1347,7 +1347,7 @@ body.animation{opacity:1;visibility:visible}.site-title,.site-description{border
 }.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h3,.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h3{font-family:"Montserrat",sans-serif;font-size:20px;font-weight:300;line-height:normal;letter-spacing:normal;text-align:center;color:#fff;margin-bottom:0}
 @media(max-width:1199px){.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h3,.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h3{font-size:18px}
 }@media(max-width:991px){.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h3,.image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h3{font-size:16px}
-}.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap{margin-bottom:40px}
+}.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap{margin-bottom:40px;text-align:center}
 .image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a{margin-top:20px;font-size:14px;font-weight:600;line-height:1.14;letter-spacing:normal;color:#fff;text-decoration:none}
 @media(max-width:991px){.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a{font-size:12px}
 }@media(max-width:767px){.image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a{font-size:14px}

@@ -8586,7 +8586,8 @@ video {
           .image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap h3, .image-description-wrapper .description-wrap .bottom-content-wrap .title-wrap .h3 {
             font-size: 16px; } }
     .image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap {
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      text-align: center; }
       .image-description-wrapper .description-wrap .bottom-content-wrap .link-wrap a {
         margin-top: 20px;
         font-size: 14px;
