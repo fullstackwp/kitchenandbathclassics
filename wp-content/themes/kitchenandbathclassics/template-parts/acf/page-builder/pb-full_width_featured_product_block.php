@@ -2,9 +2,10 @@
 $_background_color = ( get_sub_field( '_fullwidth_featured_product_background_color' ) ) ? get_sub_field( '_fullwidth_featured_product_background_color' ) : "#ffffff";
 $_img_column_size  = ( get_sub_field( '_fullwidth_featured_product_textimage_split_ratio' ) ) ? ( get_sub_field( '_fullwidth_featured_product_textimage_split_ratio' ) ) : 6;
 $_text_colum_size  = 12 - intval( $_img_column_size );
+$section_id        = ( get_sub_field( '_fullwidth_featured_product_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_fullwidth_featured_product_sectionid' ) ) : '';
 ?>
 
-<section class="full-block-description-wrapper white-text" style="background-color: <?php echo $_background_color; ?>;">
+<section <?php echo $section_id; ?> class="full-block-description-wrapper white-text" style="background-color: <?php echo $_background_color; ?>;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-<?php echo $_img_column_size; ?>">

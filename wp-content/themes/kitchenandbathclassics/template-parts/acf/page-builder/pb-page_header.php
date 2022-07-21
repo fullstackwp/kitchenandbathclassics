@@ -4,9 +4,10 @@ $content_type       = get_sub_field( '_page_header_content_type' );
 $_heading           = get_sub_field( '_page_header_heading' );
 $_image             = get_sub_field( '_page_header_image' );
 $_class             = ( 'text' == $content_type ) ? 'banner-title-wrapper' : 'banner-logo-wrapper';
+$section_id        = ( get_sub_field( '_page_header_content_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_page_header_content_sectionid' ) ) : '';
 ?>
 
-<section class="<?php echo $_class; ?> text-center" style="background-color:<?php echo $background_color; ?>" >
+<section <?php echo $section_id; ?> class="<?php echo $_class; ?> text-center" style="background-color:<?php echo $background_color; ?>" >
     <div class="container">
         <div class="row">
             <div class="col-md-12">

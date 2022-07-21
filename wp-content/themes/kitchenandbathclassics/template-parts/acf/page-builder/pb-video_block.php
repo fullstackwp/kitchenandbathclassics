@@ -2,6 +2,7 @@
 $attr           = array();
 $_video_source  = get_sub_field( '_video_link' );
 $_video_poster  = ( get_sub_field( '_video_poster' ) ) ? get_sub_field( '_video_poster' ) : '';
+$_section_ID    = get_sub_field( '_section_id' );
 
 // for mute
 if( $_mute = get_sub_field( '_video_mute_option' ) ) :
@@ -26,7 +27,7 @@ endif;
 
 if( $_video_source ) :
 ?>
-    <section class="video-wrapper text-center">
+    <section class="video-wrapper text-center" id="<?php echo ( $_section_ID ) ? $_section_ID : '';  ?>">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

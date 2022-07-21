@@ -6,9 +6,10 @@ $heading          = get_sub_field('_cta_heading');
 $description      = get_sub_field('_cta_description');
 $btn1             = get_sub_field('_cta_button1');
 $btn2             = get_sub_field('_cta_button2');
+$section_id       = ( get_sub_field( '_cta_block_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_cta_block_sectionid' ) ) : '';
 ?>
 
-<section class="cta-wrapper text-center white-text" style="background-color:<?php echo ( $background_color ) ? $background_color : '#03363a'; ?>;">
+<section <?php echo $section_id; ?> class="cta-wrapper text-center white-text" style="background-color:<?php echo ( $background_color ) ? $background_color : '#03363a'; ?>;">
 
     <?php if( $lgraphic_img ): ?>
         <div class="left-graphic">
@@ -52,6 +53,6 @@ $btn2             = get_sub_field('_cta_button2');
         </div>
     </div>
     <div class="right-graphic">
-        <img src="<?php echo get_template_directory_uri(). '/images/graphic.png'?>">
+            <?php echo wp_get_attachment_image( $rgraphic_img, 'full', false, '' ); ?>
     </div><!--right-graphic-->
 </section><!--cta-wrapper-->

@@ -5,9 +5,11 @@ $_link_title    = ( isset( $_link['title'] ) && $_link['title'] ) ? $_link['titl
 $_link_target   = ( isset( $_link['target'] ) ) ? $_link['target'] : '_self';
 
 $media_type     = get_sub_field( '_fullwidth_desc_imageorvideo_choice' );
+
+$section_id     = ( get_sub_field( '_fullwidth_desc_imgvid_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_fullwidth_desc_imgvid_sectionid' ) ) : '';
 ?>
 
-<section class="single-block-description-link-wrapper">
+<section <?php echo $section_id; ?> class="single-block-description-link-wrapper">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

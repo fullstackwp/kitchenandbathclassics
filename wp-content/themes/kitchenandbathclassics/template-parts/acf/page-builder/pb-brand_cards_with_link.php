@@ -3,15 +3,17 @@ $column          = get_sub_field( '_brand_card_column_size' );
 $show_desc       = get_sub_field( '_brand_card_section_description' );
 $section_heading = get_sub_field( '_brand_card_heading' );
 $section_desc    = get_sub_field( '_brand_card_description' );
+$section_id      = ( get_sub_field( '_brand_card_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_brand_card_sectionid' ) ) : '';
 $section_class   = "";
-
-if( 4 == $column ):
+if( 12 == $column ):
+    $section_class = ( $show_desc && ( $section_heading || $section_desc ) ) ? 'fullwidth-block-title-link-wrapper' : 'fullwidth-block-link-wrapper';
+elseif( 4 == $column ):
     $section_class = ( $show_desc && ( $section_heading || $section_desc ) ) ? 'triple-block-title-link-wrapper' : 'triple-block-link-wrapper';
 else:
     $section_class = ( $show_desc && ( $section_heading || $section_desc ) ) ? 'double-block-title-link-wrapper' : 'double-block-link-wrapper';
 endif;
 ?>
-<section class="<?php echo $section_class; ?>">
+<section <?php echo $section_id ?> class="<?php echo $section_class; ?>">
     <div class="container">
         <div class="row g-1">
             <?php if( $show_desc && ( $section_heading || $section_desc ) ) : ?>

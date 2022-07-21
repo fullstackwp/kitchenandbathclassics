@@ -2,8 +2,9 @@
 $_background_color = get_sub_field( '_logo_page_banner_background_color' ) ? get_sub_field( '_logo_page_banner_background_color' ) : '#ffffff';
 $_main_image       = get_sub_field( '_logo_page_banner_main_image' );
 $_graphic_image    = get_sub_field( '_logo_page_banner_graphic_image' );
+$section_id        = ( get_sub_field( '_logo_page_banner_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_logo_page_banner_sectionid' ) ) : '';
 ?>
-<section class="inner-main-banner-wrapper text-center">
+<section <?php echo $section_id; ?> class="inner-main-banner-wrapper text-center">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

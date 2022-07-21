@@ -6,9 +6,9 @@ if( is_array( $borders ) && !empty( $borders ) ) {
     $border_classes = implode( " ", $borders );
 }
 
-
+$section_id = ( get_sub_field( '_image_card_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_image_card_sectionid' ) ) : '';
 ?>
-<section class="image-block-link-wrapper <?php echo $border_classes; ?>">
+<section <?php echo $section_id; ?> class="image-block-link-wrapper <?php echo $border_classes; ?>">
     <div class="container">
         <div class="row align-items-center justify-content-center g-1">
             <?php if( $_heading = get_sub_field( '_image_card_section_heading' ) ): ?>

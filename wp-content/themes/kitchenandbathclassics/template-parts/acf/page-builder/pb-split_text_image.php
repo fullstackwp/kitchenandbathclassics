@@ -3,6 +3,8 @@ $_text_color        = ( get_sub_field( '_split_text_font_color' ) ) ? get_sub_fi
 $_background_color  = ( get_sub_field( '_split_text_background_color' ) ) ? get_sub_field( '_split_text_background_color' ) : '#ffffff';
 $_text              = get_sub_field( '_split_text' );
 $_img               = get_sub_field( '_split_image' );
+
+$section_id         = ( get_sub_field( '_split_text_sectionid' ) ) ? sprintf( 'id="%s"', get_sub_field( '_split_text_sectionid' ) ) : '';
 ?>
 <section class="left-right-wrapper <?php echo $_text_color; ?>">
     <div class="container">
