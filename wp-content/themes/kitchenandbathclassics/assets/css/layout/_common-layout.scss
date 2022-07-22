@@ -968,14 +968,14 @@ video{
                         letter-spacing: normal;
                         color: $color__black_2;
                         margin-bottom: 0;
-                        padding-right: 15px;
+                        // padding-right: 15px;
                         @include breakpoint(wide){
                             font-size: 18px;
-                            padding-right: 10px;
+                            // padding-right: 10px;
                         }
                         @include breakpoint(medium){
                             font-size: 16px;
-                            padding-right: 5px;
+                            // padding-right: 5px;
                         }
                         @include breakpoint(small){
                             padding-right: 0;

@@ -7956,18 +7956,15 @@ video {
         letter-spacing: normal;
         color: #393939;
         margin-bottom: 0;
-        padding-right: 15px;
         /* Large Devices, Wide Screens */
         /* Large Devices, Wide Screens */
         /* Large Devices, Wide Screens */ }
         @media (max-width: 1199px) {
           .triple-block-description-link-wrapper .block-image-link .image-wrap .description .left h3, .triple-block-description-link-wrapper .block-image-link .image-wrap .description .left .h3 {
-            font-size: 18px;
-            padding-right: 10px; } }
+            font-size: 18px; } }
         @media (max-width: 991px) {
           .triple-block-description-link-wrapper .block-image-link .image-wrap .description .left h3, .triple-block-description-link-wrapper .block-image-link .image-wrap .description .left .h3 {
-            font-size: 16px;
-            padding-right: 5px; } }
+            font-size: 16px; } }
         @media (max-width: 767px) {
           .triple-block-description-link-wrapper .block-image-link .image-wrap .description .left h3, .triple-block-description-link-wrapper .block-image-link .image-wrap .description .left .h3 {
             padding-right: 0; } }
