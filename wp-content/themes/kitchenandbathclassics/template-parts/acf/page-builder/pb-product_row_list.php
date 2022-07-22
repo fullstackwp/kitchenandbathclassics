@@ -7,13 +7,18 @@ if( have_rows( '_product_row_content') ) :
     <section class="image-block-wrapper bb-1">
         <div class="container">
             <div class="row justify-content-center g-1">
-                <?php while( have_rows( '_product_row_content') ) : the_row(); ?>
+                <?php while( have_rows( '_product_row_content') ) : the_row(); 
+                    $_image_label = get_sub_field( '_image_label' );
+                ?>
                     <div class="col-md-<?php echo $_column_size; ?> p-1">
                         <div class="image-link-block">
                             <div class="block-image-link">
                                 <?php if( $_img = get_sub_field( '_image' ) ) : ?>
                                     <div class="image-wrap">
                                         <?php echo wp_get_attachment_image( $_img, 'full', false, '' ); ?>
+                                        <?php if( $_image_label ): ?>
+                                                <span><?php echo $_image_label; ?></span>
+                                        <?php endif; ?>
                                     </div><!--image-wrap-->
                                 <?php endif; ?>
                                 
