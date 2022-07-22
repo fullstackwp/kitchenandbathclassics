@@ -879,6 +879,8 @@ video{
                     }
                 }
                 .right{
+                    display: flex;
+                    align-items: center;
                     @include breakpoint(medium){
                         margin-top: 20px;
                         width: 100%;

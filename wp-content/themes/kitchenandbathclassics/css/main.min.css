@@ -1214,6 +1214,7 @@ video{width:100%}.banner-wrapper .banner-content{position:relative}.banner-wrapp
 @media(max-width:991px){.double-block-description-link-wrapper .block-image-link .image-wrap .description .left .link .svg{height:10px}
 }@media(max-width:767px){.double-block-description-link-wrapper .block-image-link .image-wrap .description .left .link .svg{height:16px}
 }.double-block-description-link-wrapper .block-image-link .image-wrap .description .left .link .svg path{fill:#fff}
+.double-block-description-link-wrapper .block-image-link .image-wrap .description .right{display:flex;align-items:center}
 @media(max-width:991px){.double-block-description-link-wrapper .block-image-link .image-wrap .description .right{margin-top:20px;width:100%;text-align:center;height:120px}
 }@media(max-width:767px){.double-block-description-link-wrapper .block-image-link .image-wrap .description .right{min-height:inherit}
 }.double-block-description-link-wrapper .block-image-link .image-wrap .description .right .svg{width:100px;height:auto}

@@ -7882,6 +7882,8 @@ video {
             .double-block-description-link-wrapper .block-image-link .image-wrap .description .left .link .svg path {
               fill: #ffffff; }
         .double-block-description-link-wrapper .block-image-link .image-wrap .description .right {
+          display: flex;
+          align-items: center;
           /* Large Devices, Wide Screens */
           /* Large Devices, Wide Screens */ }
           @media (max-width: 991px) {
