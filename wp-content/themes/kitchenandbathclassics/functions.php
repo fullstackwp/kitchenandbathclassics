@@ -143,7 +143,7 @@ function kitchenandbathclassics_scripts() {
 	$min = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG === false ) ? '.min' : '';
 
 	$main_css  = '/css/main' . $min . '.css';
-	$main_js   = '/js/main.js';
+	$main_js   = '/js/main' . $min . '.js';
 	$vendor_js = '/js/vendor' . $min . '.js';
 
 	wp_enqueue_style( 'kitchenandbathclassics-style', get_stylesheet_uri(), array(), _S_VERSION );
@@ -158,7 +158,7 @@ function kitchenandbathclassics_scripts() {
 	wp_enqueue_script( 'kitchenandbathclassics-vendor-js' );
 
 	/* Main JS */
-	wp_register_script( 'kitchenandbathclassics-main-js', get_template_directory_uri() . '/' . $main_js, array( 'jquery', 'kitchenandbathclassics-vendor-js' ), _S_VERSION, true );
+	wp_register_script( 'kitchenandbathclassics-main-js', get_template_directory_uri() . '/' . $main_js, array( 'jquery', 'kitchenandbathclassics-vendor-js' ), time(), true );
 	wp_enqueue_script( 'kitchenandbathclassics-main-js' );
 
 }

@@ -93,27 +93,35 @@ jQuery(function ($) {
             this.$scrollDownEl.on('click', this.scrollDown.bind(this));
         },
         scrollDown: function (e) {
-            if ($(e.currentTarget).attr('href').indexOf("#") != -1) {
-                e.preventDefault();
-                var headerHeight = $("#masthead").outerHeight(true);
-                var target = $(e.currentTarget).attr('href');
-                var $target = $(target);
-                if ('undefined' != $target.length && $target.length) {
-                    this.$htmlBody.stop().animate({
-                        'scrollTop': $target.offset().top - headerHeight
-                    });
+            console.log($(e.currentTarget).attr('href'));
+            if( window.location.href.split('#')[0] ==  $(e.currentTarget).attr('href').split('#')[0] ) {
+                if ($(e.currentTarget).attr('href').indexOf("#") != -1) {
+                    e.preventDefault();
+                    var headerHeight = $("#masthead").outerHeight(true);
+                    var target = $(e.currentTarget).attr('href');
+                    var hash_tag = target.split('#')[1];
+                    console.log(hash_tag);
+                    //var $target = $(target);
+                    var $target = '#'+hash_tag;
+
+                    if ('undefined' != $target.length && $target.length) {
+                        this.$htmlBody.stop().animate({
+                            'scrollTop': $($target).offset().top - headerHeight
+                        });
+                    }
                 }
             }
         },
         scrollToOnPageLoad: function () {
             var pageURI = window.location.toString();
+            var headerHeight = $("#masthead").outerHeight(true);
             if (pageURI.indexOf("#") > 0) {
                 var hashValue = location.hash;
                 var clean_uri = pageURI.substring(0, pageURI.indexOf("#"));
 
                 window.history.replaceState({}, document.title, clean_uri);
                 this.$htmlBody.stop().animate({
-                    'scrollTop': $(hashValue).offset().top - 30
+                    'scrollTop': $(hashValue).offset().top - headerHeight
                 });
             }
         }
