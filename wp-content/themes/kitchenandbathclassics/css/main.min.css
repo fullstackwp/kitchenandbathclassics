@@ -1217,8 +1217,8 @@ video{width:100%}.banner-wrapper .banner-content{position:relative}.banner-wrapp
 .double-block-description-link-wrapper .block-image-link .image-wrap .description .right{display:flex;align-items:center}
 @media(max-width:991px){.double-block-description-link-wrapper .block-image-link .image-wrap .description .right{margin-top:20px;width:100%;text-align:center;height:120px}
 }@media(max-width:767px){.double-block-description-link-wrapper .block-image-link .image-wrap .description .right{min-height:inherit}
-}.double-block-description-link-wrapper .block-image-link .image-wrap .description .right .svg{width:100px;height:auto}
-@media(max-width:991px){.double-block-description-link-wrapper .block-image-link .image-wrap .description .right .svg{width:160px}
+}.double-block-description-link-wrapper .block-image-link .image-wrap .description .right .svg{width:100px;height:100px}
+@media(max-width:991px){.double-block-description-link-wrapper .block-image-link .image-wrap .description .right .svg{width:160px;height:auto}
 }.triple-block-description-link-wrapper{padding:15px 0}.triple-block-description-link-wrapper .block-image-link a{text-decoration:none;display:block}
 .triple-block-description-link-wrapper .block-image-link a:hover .image-wrap .description .left .link .svg{left:8px}
 .triple-block-description-link-wrapper .block-image-link .image-wrap{position:relative}

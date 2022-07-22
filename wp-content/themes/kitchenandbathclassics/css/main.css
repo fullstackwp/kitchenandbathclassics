@@ -7897,11 +7897,12 @@ video {
               min-height: inherit; } }
           .double-block-description-link-wrapper .block-image-link .image-wrap .description .right .svg {
             width: 100px;
-            height: auto;
+            height: 100px;
             /* Large Devices, Wide Screens */ }
             @media (max-width: 991px) {
               .double-block-description-link-wrapper .block-image-link .image-wrap .description .right .svg {
-                width: 160px; } }
+                width: 160px;
+                height: auto; } }
 
 .triple-block-description-link-wrapper {
   padding: 15px 0; }

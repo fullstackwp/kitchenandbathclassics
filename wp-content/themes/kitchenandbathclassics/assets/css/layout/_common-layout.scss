@@ -892,9 +892,10 @@ video{
                     }
                     .svg{
                         width: 100px;
-                        height: auto;
+                        height: 100px;
                         @include breakpoint(medium){
                             width: 160px;
+                            height: auto;
                         }
                     }
                 }
