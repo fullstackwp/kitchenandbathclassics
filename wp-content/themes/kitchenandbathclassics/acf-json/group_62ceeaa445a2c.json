@@ -2516,6 +2516,25 @@
                                     "mime_types": ""
                                 },
                                 {
+                                    "key": "field_62dabfc4563ec",
+                                    "label": "Image Label",
+                                    "name": "_image_label",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
                                     "key": "field_62d5ae7402e76",
                                     "label": "Title",
                                     "name": "_title",
@@ -3128,5 +3147,5 @@
     "active": true,
     "description": "Page builder for tapsbath theme.",
     "show_in_rest": 0,
-    "modified": 1658423071
+    "modified": 1658503131
 }
