@@ -2,7 +2,7 @@
 $attr           = array();
 $_video_source  = get_sub_field( '_video_link' );
 $_video_poster  = ( get_sub_field( '_video_poster' ) ) ? get_sub_field( '_video_poster' ) : '';
-$_section_ID    = get_sub_field( '_section_id' );
+$_section_ID    = get_sub_field( '_video_block_sectionid' );
 
 // for mute
 if( $_mute = get_sub_field( '_video_mute_option' ) ) :
