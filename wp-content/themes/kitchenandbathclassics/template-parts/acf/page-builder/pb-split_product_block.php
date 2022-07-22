@@ -65,7 +65,39 @@ $section_id        = ( get_sub_field( '_split_product_block_sectionid' ) ) ? spr
                         <p>
                             <?php echo $_description; ?>
                         </p>
-                    <?php endif; ?>
+                    <?php endif; ?><?php 
+                    $_has_bottom_content = get_sub_field( '_split_product_has_bottom_content' );
+                    $_bottom_title       = get_sub_field( '_split_product_bottom_title' );
+                    $_bottom_link        = get_sub_field( '_split_product_bottom_link' );
+                    $_bottom_logo        = get_sub_field( '_split_product_bottom_logo' );
+
+                    if( $_has_bottom_content ):
+                    ?>
+                        <div class="bottom-content-wrap">
+                            <?php if( $_bottom_title ): ?>
+                                <div class="title-wrap">
+                                    <?php echo $_bottom_title; ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php if( $_bottom_link ): ?>
+                                <div class="link-wrap">
+                                    <a href="<?php echo $_bottom_link['url']; ?>" target="<?php echo esc_attr( $_bottom_link['target'] ); ?>"><?php echo $_bottom_link['title']; ?>
+                                        <img src="<?php echo get_template_directory_uri(). '/images/arrow-right.svg'?>" class="svg">
+                                    </a>
+
+                                </div>
+                            <?php endif; ?>
+                            <?php 
+                            if( $_bottom_logo ):
+                            ?>
+                                <div class="image-wrap">
+                                    <?php echo wp_get_attachment_image( $_bottom_logo, 'full', false, array() ); ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                    <?php
+                    endif;
+                    ?>
                 </div>
             </div>
         </div>
