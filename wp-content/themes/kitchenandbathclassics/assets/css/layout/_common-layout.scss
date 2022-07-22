@@ -98,11 +98,14 @@ body{
 }
 .content-wrap{
     p{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: normal;
         line-height: 1.63;
         letter-spacing: normal;
         color: $color__black;
+        @include breakpoint(wide){
+            font-size: 16px;
+        }
         @include breakpoint(small){
             font-size: 14px;
         }
@@ -229,6 +232,14 @@ video{
         @include breakpoint(small){
             padding: 0;
         }
+        +.content-wrap{
+            p{
+                font-size: 16px;
+                @include breakpoint(small){
+                    font-size: 14px;
+                }
+            }
+        }
     }
     .content-wrap{
         padding: 0 13%;
@@ -239,7 +250,9 @@ video{
             padding: 0;
         }
         p{
-            margin-bottom: 0;
+            &:last-child{
+                margin-bottom: 0;
+            }
             @include breakpoint(small){
                 font-size: 14px;
             }
@@ -247,6 +260,18 @@ video{
     }
     .button{
         margin-top: 30px;
+        a{
+            padding: 10px 85px;
+            @include breakpoint(medium){
+                padding: 10px 75px;
+            }
+            @include breakpoint(small){
+                padding: 10px 65px;
+            }
+            @include breakpoint(extrasmall){
+                padding: 10px 55px;
+            }
+        }
     }
 }
 .image-block-link-wrapper{
@@ -679,6 +704,7 @@ video{
                         letter-spacing: normal;
                         color: $color__white;
                         margin-bottom: 0;
+                        text-transform: uppercase;
                         @include breakpoint(wide){
                             font-size: 18px;
                         }
@@ -779,7 +805,7 @@ video{
                 padding: 25px;
                 display: flex;
                 flex-wrap: wrap;
-                align-items: center;
+                // align-items: center;
                 justify-content: space-between;
                 @include breakpoint(wide){
                     min-height: 120px;
@@ -795,6 +821,7 @@ video{
                         letter-spacing: normal;
                         color: $color__white;
                         margin-bottom: 0;
+                        text-transform: uppercase;
                         @include breakpoint(wide){
                             font-size: 18px;
                         }
@@ -803,6 +830,7 @@ video{
                         }
                         span{
                             font-weight: 300;
+                            text-transform: none;
                         }
                     }
                     h3{
@@ -927,6 +955,7 @@ video{
                         }
                         span{
                             font-weight: 300;
+                            text-transform: none;
                         }
                     }
                     h3{
@@ -936,11 +965,17 @@ video{
                         letter-spacing: normal;
                         color: $color__black_2;
                         margin-bottom: 0;
+                        padding-right: 15px;
                         @include breakpoint(wide){
                             font-size: 18px;
+                            padding-right: 10px;
                         }
                         @include breakpoint(medium){
                             font-size: 16px;
+                            padding-right: 5px;
+                        }
+                        @include breakpoint(small){
+                            padding-right: 0;
                         }
                     }
                     .link{
@@ -1040,6 +1075,20 @@ video{
             padding: 0;
         }
     }
+    .title-wrap{
+        h2{
+            font-size: 35px;
+            @include breakpoint(medium){
+                font-size: 32px;
+            }
+            @include breakpoint(small){
+                font-size: 30px;
+            }
+            @include breakpoint(extrasmall){
+                font-size: 28px;
+            }
+        }
+    }
     .button{
         display: flex;
         flex-wrap: wrap;
@@ -1083,9 +1132,9 @@ video{
     }
     .right-graphic{
         position: absolute;
-        right: 18%;
+        right: 16.7%;
         height: 100%;
-        width: 338px;
+        width: 318px;
         height: auto;
         bottom: 0;
         @media only screen and (min-width:1525px){
@@ -1126,6 +1175,16 @@ video{
             }
             .author{
                 color: $color__white;
+            }
+        }
+        .author-image{
+            @media only screen and (min-width:1399px){
+                left: -70px;
+            }
+            img{
+                @media only screen and (min-width:1399px){
+                    min-width: 512px;
+                }
             }
         }
     }
@@ -1555,6 +1614,15 @@ video{
                     width: 100%;
                 }
             }
+            .image-wrap{
+                + p{
+                    font-size: 16px;
+                    @include breakpoint(small){
+                        font-size: 14px;
+                    }
+                }
+
+            }
         }
     }
     .image-wrap{
@@ -1574,7 +1642,7 @@ video{
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 0 12%;
+        padding: 0 11%;
         flex-direction: column;
         position: relative;
         @include breakpoint(wide){
@@ -1632,7 +1700,7 @@ video{
         p{
             font-size: 18px;
             font-weight: 300;
-            line-height: normal;
+            line-height: 1.44;
             letter-spacing: normal;
             text-align: center;
             color: $color__white;
@@ -1789,6 +1857,24 @@ video{
         .block-image-link{
             .image-wrap{
                 box-shadow: 0 3px 6px 0 $color__black-16;
+                position: relative;
+                span{
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    font-family: $font__secondary;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.11;
+                    letter-spacing: normal;
+                    color: $color__evergreen;
+                    @include breakpoint(wide){
+                        font-size: 16px;
+                    }
+                    @include breakpoint(medium){
+                        font-size: 14px;
+                    }
+                }
             }
             .product{
                 font-size: 20px;
@@ -1810,6 +1896,7 @@ video{
             letter-spacing: normal;
             text-align: left;
             color: $color__black;
+            text-transform: uppercase;
             @include breakpoint(medium){
                 font-size: 18px;
             }
@@ -1818,6 +1905,7 @@ video{
             }
             span{
                 font-weight: normal;
+                text-transform: none;
             }
         }
     }
