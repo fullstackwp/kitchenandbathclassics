@@ -143,7 +143,7 @@ function kitchenandbathclassics_scripts() {
 	$min = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG === false ) ? '.min' : '';
 
 	$main_css  = '/css/main' . $min . '.css';
-	$main_js   = '/js/main' . $min . '.js';
+	$main_js   = '/js/main.js';
 	$vendor_js = '/js/vendor' . $min . '.js';
 
 	wp_enqueue_style( 'kitchenandbathclassics-style', get_stylesheet_uri(), array(), _S_VERSION );
