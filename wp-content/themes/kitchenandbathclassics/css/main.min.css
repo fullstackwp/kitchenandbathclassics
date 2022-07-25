@@ -1008,16 +1008,16 @@ ul{list-style:disc}ol{list-style:decimal}li>ul,li>ol{margin-bottom:0;margin-left
 dt{font-weight:bold}dd{margin:0 1.5em 1.5em}img{height:auto;max-width:100%}figure{margin:1em 0}
 table{margin:0 0 1.5em;width:100%}a{color:royalblue;transition:all .6s}a:visited{color:purple}
 a:hover,a:focus,a:active{color:midnightblue}a:focus{outline:0;box-shadow:none}a:hover,a:active{outline:0}
-.main-navigation{clear:both;display:inline-block;width:auto}.main-navigation .navigation-wrap div>ul{display:flex;flex-wrap:wrap;justify-content:space-between;width:100%;margin:0 auto;max-width:860px}
+.main-navigation{clear:both;display:inline-block;width:auto}.main-navigation .navigation-wrap div>ul{display:flex;flex-wrap:wrap;justify-content:space-between;width:100%;margin:0 auto;max-width:950px}
 @media(max-width:991px){.main-navigation .navigation-wrap div>ul{padding:0 30px}}
 @media(max-width:767px){.main-navigation .navigation-wrap div>ul{padding:0 15px}}
 .main-navigation .navigation-wrap div>ul>li{border-left:2px solid #707070;padding:0 20px}
 @media(max-width:767px){.main-navigation .navigation-wrap div>ul>li{padding:0;border-left:0;border-top:2px solid #707070;margin-bottom:20px;padding-top:15px}
 }.main-navigation .navigation-wrap div>ul>li>a{font-size:13px;font-weight:bold;line-height:1.08;letter-spacing:normal;margin-bottom:30px;pointer-events:none}
 @media(max-width:767px){.main-navigation .navigation-wrap div>ul>li>a{margin-bottom:15px}
-}.main-navigation .navigation-wrap div>ul>li:first-child{flex:0 0 65%;max-width:65%}
+}.main-navigation .navigation-wrap div>ul>li:first-child{flex:0 0 60%;max-width:60%}
 @media(max-width:767px){.main-navigation .navigation-wrap div>ul>li:first-child{flex:0 0 100%;max-width:100%}
-}.main-navigation .navigation-wrap div>ul>li:last-child{flex:0 0 35%;max-width:35%}
+}.main-navigation .navigation-wrap div>ul>li:last-child{flex:0 0 40%;max-width:40%}
 @media(max-width:767px){.main-navigation .navigation-wrap div>ul>li:last-child{flex:0 0 100%;max-width:100%;margin-bottom:0}
 }.main-navigation .navigation-wrap div>ul>li:last-child>ul>li{flex:0 0 100%;max-width:100%}
 .main-navigation .navigation-wrap div>ul>li>ul{display:flex;flex-wrap:wrap}.main-navigation .navigation-wrap div>ul>li>ul>li{flex:0 0 50%;max-width:50%}
