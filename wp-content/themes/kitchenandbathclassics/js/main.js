@@ -128,4 +128,11 @@ jQuery(function ($) {
     }
     scrollToSection.init();
 
+    // matchHeight
+    setTimeout(function(){
+        $('.image-block-link-wrapper .row .block-title > h3, .double-block-description-link-wrapper .description').matchHeight({
+            byRow: true,			
+        });
+    }, 500);
+
 });
