@@ -578,7 +578,7 @@
                                     },
                                     "choices": {
                                         "left": "Left",
-                                        "right": "Right"
+                                        "right": "Right(Default)"
                                     },
                                     "allow_null": 0,
                                     "other_choice": 0,
@@ -601,6 +601,25 @@
                                         "id": ""
                                     },
                                     "return_format": "array"
+                                },
+                                {
+                                    "key": "field_62e186d72759d",
+                                    "label": "Logo Position Bottom?",
+                                    "name": "_card_logo_position_bottom",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
                                 }
                             ]
                         }
@@ -3272,5 +3291,5 @@
     "active": true,
     "description": "Page builder for tapsbath theme.",
     "show_in_rest": 0,
-    "modified": 1658939480
+    "modified": 1658947501
 }

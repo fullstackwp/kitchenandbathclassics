@@ -49,9 +49,19 @@ endif;
                         <div class="block-image-link">
                             <a href="<?php echo $_link_url; ?>">
                                 <?php
-                                $feature_img    = get_sub_field( '_card_feature_image' );
-                                $logo_img       = get_sub_field( '_card_logo_image' );
-                                $logo_alignment = get_sub_field( '_card_logo_image_alignment' );
+                                $feature_img            = get_sub_field( '_card_feature_image' );
+                                $logo_img               = get_sub_field( '_card_logo_image' );
+                                $logo_alignment         = get_sub_field( '_card_logo_image_alignment' );
+                                $logo_position_bottom   = get_sub_field( '_card_logo_position_bottom' );
+                                $logo_class             = array();
+
+                                if( $logo_position_bottom ) {
+                                    $logo_class[] = "bottom";
+                                }
+
+                                if( ( $logo_alignment && "left" == $logo_alignment ) ) {
+                                    $logo_class[] = "left";
+                                }
 
                                 if( $feature_img || $logo_img ): ?>
                                     <div class="image-wrap">
@@ -60,7 +70,7 @@ endif;
 
                                         if( $logo_img ):
                                         ?>
-                                            <div class="logo <?php echo ( $logo_alignment && "left" == $logo_alignment ) ? "left" : ""; ?>">
+                                            <div class="logo <?php echo implode( ' ', $logo_class ); ?>">
                                                 <?php echo wp_get_attachment_image( $logo_img, 'full', false, array( 'class' => 'svg' ) ); ?>
                                             </div><!--logo-->
                                         <?php endif; ?>
