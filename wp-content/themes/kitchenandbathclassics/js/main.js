@@ -105,9 +105,16 @@ jQuery(function ($) {
                     var $target = '#'+hash_tag;
 
                     if ('undefined' != $target.length && $target.length) {
-                        this.$htmlBody.stop().animate({
-                            'scrollTop': $($target).offset().top - headerHeight
-                        });
+                        if ('masthead' == $($target).prev().attr('id')) {
+                            this.$htmlBody.stop().animate({
+                                'scrollTop': 0
+                            });
+                        } else {
+                            this.$htmlBody.stop().animate({
+                                'scrollTop': $($target).offset().top - headerHeight
+                            });
+                        }
+
                     }
                 }
             }
