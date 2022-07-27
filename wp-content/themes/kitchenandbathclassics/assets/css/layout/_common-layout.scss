@@ -1794,6 +1794,11 @@ video{
             @include breakpoint(extrasmall){
                 font-size: 18px;
             }
+            span{
+                display: block;
+                font-family: $font__main;
+                font-size: 20px;
+            }
         }
         .image-wrap{
             width: 242px;

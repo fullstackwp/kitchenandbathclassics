@@ -8773,6 +8773,10 @@ video {
       @media (max-width: 479px) {
         .image-description-wrapper .description-wrap h2, .image-description-wrapper .description-wrap .h2 {
           font-size: 18px; } }
+      .image-description-wrapper .description-wrap h2 span, .image-description-wrapper .description-wrap .h2 span {
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px; }
     .image-description-wrapper .description-wrap .image-wrap {
       width: 242px;
       position: relative;
