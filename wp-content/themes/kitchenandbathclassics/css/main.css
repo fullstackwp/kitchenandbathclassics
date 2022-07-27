@@ -6862,6 +6862,82 @@ textarea {
 
 .consultation-wrapper {
   padding: 35px 0; }
+  .consultation-wrapper .title-wrap {
+    padding: 0 15%;
+    text-align: center;
+    /* Large Devices, Wide Screens */
+    /* Large Devices, Wide Screens */ }
+    @media (max-width: 991px) {
+      .consultation-wrapper .title-wrap {
+        padding: 0 5%; } }
+    @media (max-width: 767px) {
+      .consultation-wrapper .title-wrap {
+        padding: 0; } }
+    .consultation-wrapper .title-wrap h3, .consultation-wrapper .title-wrap .h3 {
+      font-family: "Playfair Display", sans-serif;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1.03;
+      letter-spacing: normal;
+      text-align: center;
+      color: #03363a;
+      margin-bottom: 10px;
+      /* Large Devices, Wide Screens */
+      /* Large Devices, Wide Screens */
+      /* Large Devices, Wide Screens */ }
+      @media (max-width: 1199px) {
+        .consultation-wrapper .title-wrap h3, .consultation-wrapper .title-wrap .h3 {
+          font-size: 30px; } }
+      @media (max-width: 991px) {
+        .consultation-wrapper .title-wrap h3, .consultation-wrapper .title-wrap .h3 {
+          font-size: 26px; } }
+      @media (max-width: 767px) {
+        .consultation-wrapper .title-wrap h3, .consultation-wrapper .title-wrap .h3 {
+          font-size: 22px; } }
+  .consultation-wrapper .content-wrap {
+    padding: 0 15%;
+    text-align: center;
+    line-height: 0.5;
+    font-weight: normal;
+    /* Large Devices, Wide Screens */
+    /* Large Devices, Wide Screens */ }
+    @media (max-width: 991px) {
+      .consultation-wrapper .content-wrap {
+        padding: 0 5%; } }
+    @media (max-width: 767px) {
+      .consultation-wrapper .content-wrap {
+        padding: 0; } }
+    .consultation-wrapper .content-wrap p {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      color: #000000;
+      /* Large Devices, Wide Screens */
+      /* Large Devices, Wide Screens */ }
+      @media (max-width: 1199px) {
+        .consultation-wrapper .content-wrap p {
+          font-size: 16px; } }
+      @media (max-width: 991px) {
+        .consultation-wrapper .content-wrap p {
+          font-size: 14px; } }
+      .consultation-wrapper .content-wrap p a {
+        color: #b8110c;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.63;
+        letter-spacing: normal;
+        /* Large Devices, Wide Screens */
+        /* Large Devices, Wide Screens */ }
+        @media (max-width: 1199px) {
+          .consultation-wrapper .content-wrap p a {
+            font-size: 16px; } }
+        @media (max-width: 991px) {
+          .consultation-wrapper .content-wrap p a {
+            font-size: 14px; } }
+        .consultation-wrapper .content-wrap p a:hover {
+          color: #000000; }
   .consultation-wrapper .hbspt-form fieldset {
     margin-bottom: 20px;
     /* Large Devices, Wide Screens */ }
@@ -6891,6 +6967,8 @@ textarea {
     .consultation-wrapper .hbspt-form fieldset h3, .consultation-wrapper .hbspt-form fieldset .h3 {
       padding: 0 15%;
       text-align: center;
+      line-height: 0.5;
+      font-weight: normal;
       /* Large Devices, Wide Screens */
       /* Large Devices, Wide Screens */ }
       @media (max-width: 991px) {
@@ -6900,9 +6978,9 @@ textarea {
         .consultation-wrapper .hbspt-form fieldset h3, .consultation-wrapper .hbspt-form fieldset .h3 {
           padding: 0; } }
       .consultation-wrapper .hbspt-form fieldset h3 span, .consultation-wrapper .hbspt-form fieldset .h3 span {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: normal;
-        line-height: 1.44;
+        line-height: 1.63;
         letter-spacing: normal;
         color: #000000;
         /* Large Devices, Wide Screens */
@@ -6916,9 +6994,9 @@ textarea {
       .consultation-wrapper .hbspt-form fieldset h3 a, .consultation-wrapper .hbspt-form fieldset .h3 a {
         color: #b8110c;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: normal;
-        line-height: 1.44;
+        line-height: 1.63;
         letter-spacing: normal;
         /* Large Devices, Wide Screens */
         /* Large Devices, Wide Screens */ }

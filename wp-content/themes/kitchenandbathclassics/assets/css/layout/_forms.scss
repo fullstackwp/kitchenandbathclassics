@@ -33,6 +33,83 @@ textarea {
 }
 .consultation-wrapper{
 	padding: 35px 0;
+	.title-wrap{
+		padding: 0 15%;
+		text-align: center;
+		@include breakpoint(medium){
+			padding: 0 5%;
+		}
+		@include breakpoint(small){
+			padding: 0;
+		}
+		h3{
+			font-family: $font__secondary;
+			font-size: 32px;
+			font-weight: 500;
+			line-height: 1.03;
+			letter-spacing: normal;
+			text-align: center;
+			color: $color__evergreen;
+			margin-bottom: 10px;
+			@include breakpoint(wide){
+				font-size: 30px;
+			}
+			@include breakpoint(medium){
+				font-size: 26px;
+			}
+			@include breakpoint(small){
+				font-size: 22px;
+			}
+	
+		}
+	}
+	.content-wrap{
+		padding: 0 15%;
+		text-align: center;
+		line-height: 0.5;
+		font-weight: normal;
+		@include breakpoint(medium){
+			padding: 0 5%;
+		}
+		@include breakpoint(small){
+			padding: 0;
+		}
+		p{
+			// font-size: 18px;
+			font-size: 16px;
+			font-weight: normal;
+			// line-height: 1.44;
+			line-height: 1.63;
+			letter-spacing: normal;
+			color: $color__black;
+			@include breakpoint(wide){
+				font-size: 16px;
+			}
+			@include breakpoint(medium){
+				font-size: 14px;
+			}
+			a{
+				color: $color__rusty_red;
+				text-decoration: none;
+				// font-size: 18px;
+				font-size: 16px;
+				font-weight: normal;
+				// line-height: 1.44;
+				line-height: 1.63;
+				letter-spacing: normal;
+				@include breakpoint(wide){
+					font-size: 16px;
+				}
+				@include breakpoint(medium){
+					font-size: 14px;
+				}
+				&:hover{
+					color: $color__black;
+				}
+			}
+
+		}
+	}
 	.hbspt-form{
 		fieldset{
 			margin-bottom: 20px;
@@ -60,6 +137,8 @@ textarea {
 			h3{
 				padding: 0 15%;
 				text-align: center;
+				line-height: 0.5;
+				font-weight: normal;
 				@include breakpoint(medium){
 					padding: 0 5%;
 				}
@@ -67,9 +146,11 @@ textarea {
 					padding: 0;
 				}
 				span{
-					font-size: 18px;
+					// font-size: 18px;
+					font-size: 16px;
 					font-weight: normal;
-					line-height: 1.44;
+					// line-height: 1.44;
+					line-height: 1.63;
 					letter-spacing: normal;
 					color: $color__black;
 					@include breakpoint(wide){
@@ -82,9 +163,11 @@ textarea {
 				a{
 					color: $color__rusty_red;
 					text-decoration: none;
-					font-size: 18px;
+					// font-size: 18px;
+					font-size: 16px;
 					font-weight: normal;
-					line-height: 1.44;
+					// line-height: 1.44;
+					line-height: 1.63;
 					letter-spacing: normal;
 					@include breakpoint(wide){
 						font-size: 16px;
