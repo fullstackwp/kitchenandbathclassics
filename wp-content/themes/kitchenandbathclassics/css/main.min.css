@@ -1393,7 +1393,8 @@ video{width:100%}.banner-wrapper .banner-content{position:relative}.banner-wrapp
 }@media(max-width:991px){.image-description-wrapper .description-wrap h2,.image-description-wrapper .description-wrap .h2{font-size:22px;margin-bottom:20px}
 }@media(max-width:767px){.image-description-wrapper .description-wrap h2,.image-description-wrapper .description-wrap .h2{font-size:20px}
 }@media(max-width:479px){.image-description-wrapper .description-wrap h2,.image-description-wrapper .description-wrap .h2{font-size:18px}
-}.image-description-wrapper .description-wrap .image-wrap{width:242px;position:relative;text-align:center;margin-bottom:15px}
+}.image-description-wrapper .description-wrap h2 span,.image-description-wrapper .description-wrap .h2 span{display:block;font-family:"Montserrat",sans-serif;font-size:20px}
+.image-description-wrapper .description-wrap .image-wrap{width:242px;position:relative;text-align:center;margin-bottom:15px}
 @media(max-width:1199px){.image-description-wrapper .description-wrap .image-wrap{height:auto;width:auto}
 }@media(max-width:1199px){.image-description-wrapper .description-wrap .image-wrap img{height:auto}
 }.image-description-wrapper .description-wrap p{font-size:18px;font-weight:300;line-height:1.44;letter-spacing:normal;text-align:center;color:#fff;position:relative}
