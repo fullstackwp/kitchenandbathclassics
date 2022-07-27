@@ -336,14 +336,28 @@ video{
                 text-decoration: none;
                 display: block;
                 &:hover{
+                    .image-wrap{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
                     .link{
+                        color: $color__deep_red;
                         .svg{
-                            left: 5px;
+                            // left: 5px;
+                            path{
+                                fill: $color__deep_red;
+                            }
                         }
                     }
                 }
+                .image-wrap{
+                    overflow: hidden;
+                    
+                }
                 img{
                     width: auto;
+                    transition: all 0.6s;
                 }
                 .link{
                     margin-top: 25px;
@@ -352,6 +366,7 @@ video{
                     line-height: 1.14;
                     letter-spacing: -0.28px;
                     color: $color__evergreen;
+                    transition: all 0.6s;
                     @include breakpoint(wide){
                         font-size: 12px;
                     }
@@ -370,6 +385,9 @@ video{
                         }
                         @include breakpoint(small){
                             height: 14px;
+                        }
+                        path{
+                            transition: all 0.6s;
                         }
                     }
                 }
