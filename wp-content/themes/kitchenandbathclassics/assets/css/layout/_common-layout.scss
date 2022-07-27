@@ -550,6 +550,12 @@ video{
                         right: 20px;
                         bottom: 20px;
                     }
+                    &.left{
+                        left: 30px;
+                        @include breakpoint(medium){
+                            left: 20px;
+                        }
+                    }
                 }
             }
             .link{

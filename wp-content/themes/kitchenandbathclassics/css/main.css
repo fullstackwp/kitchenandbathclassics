@@ -7704,6 +7704,12 @@ video {
             width: 89px;
             right: 20px;
             bottom: 20px; } }
+        .double-block-link-wrapper .block-image-link a .image-wrap .logo.left {
+          left: 30px;
+          /* Large Devices, Wide Screens */ }
+          @media (max-width: 991px) {
+            .double-block-link-wrapper .block-image-link a .image-wrap .logo.left {
+              left: 20px; } }
     .double-block-link-wrapper .block-image-link a .link {
       margin-top: 20px;
       font-size: 14px;

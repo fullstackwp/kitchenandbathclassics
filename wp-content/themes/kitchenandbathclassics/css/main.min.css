@@ -1181,6 +1181,8 @@ video{width:100%}.banner-wrapper .banner-content{position:relative}.banner-wrapp
 .double-block-link-wrapper .block-image-link a .image-wrap img{width:auto}.double-block-link-wrapper .block-image-link a .image-wrap .logo{height:119px;width:119px;background-color:#03363a;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;position:absolute;right:30px;bottom:30px;padding:15px;cursor:default}
 @media(max-width:1199px){.double-block-link-wrapper .block-image-link a .image-wrap .logo{height:99px;width:99px}
 }@media(max-width:991px){.double-block-link-wrapper .block-image-link a .image-wrap .logo{height:89px;width:89px;right:20px;bottom:20px}
+}.double-block-link-wrapper .block-image-link a .image-wrap .logo.left{left:30px}
+@media(max-width:991px){.double-block-link-wrapper .block-image-link a .image-wrap .logo.left{left:20px}
 }.double-block-link-wrapper .block-image-link a .link{margin-top:20px;font-size:14px;font-weight:500;line-height:1.14;letter-spacing:-0.28px;color:#03363a;transition:all .6s}
 @media(max-width:991px){.double-block-link-wrapper .block-image-link a .link{margin-top:15px}
 }.double-block-link-wrapper .block-image-link a .link .svg{width:7px;height:14px;position:relative;transition:all .6s;left:8px}
