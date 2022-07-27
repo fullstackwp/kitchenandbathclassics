@@ -1221,9 +1221,9 @@ video{
         left: 25%;
         top: 0;
         height: 100%;
-        img{
-            height: 100%;
-        }
+        // img{
+        //     height: 100%;
+        // }
     }
     .right-graphic{
         position: absolute;
@@ -1246,9 +1246,9 @@ video{
             width: 283px;
             right: 13%;
         }
-        img{
-            height: 100%;
-        }
+        // img{
+        //     height: 100%;
+        // }
     }
     &.white-text{
         .right-graphic{
@@ -1371,6 +1371,9 @@ video{
     .author-image{
         position: relative;
         z-index: 1;
+        @include breakpoint(small){
+            margin-top: 50px;
+        }
     }
 }
 .video-wrapper{
