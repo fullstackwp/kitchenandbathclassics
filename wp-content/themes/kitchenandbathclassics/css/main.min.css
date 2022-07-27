@@ -1336,7 +1336,7 @@ video{width:100%}.banner-wrapper .banner-content{position:relative}.banner-wrapp
 }.left-right-wrapper .left-right-content-wrap ul{margin:0;padding:0;width:320px;list-style:none}
 @media(max-width:991px){.left-right-wrapper .left-right-content-wrap ul{width:280px}
 }.left-right-wrapper .left-right-content-wrap ul li{text-align:center}.left-right-wrapper .left-right-content-wrap ul li:last-child{border-bottom:0}
-.left-right-wrapper .left-right-content-wrap ul li a{font-family:"Playfair Display",sans-serif;font-size:30px;font-weight:500;line-height:2.5;letter-spacing:normal;text-transform:uppercase;text-decoration:none}
+.left-right-wrapper .left-right-content-wrap ul li a{font-family:"Playfair Display",sans-serif;font-size:30px;font-weight:500;line-height:2.5;letter-spacing:normal;text-transform:uppercase;text-decoration:none;pointer-events:none}
 @media(max-width:1199px){.left-right-wrapper .left-right-content-wrap ul li a{font-size:28px}
 }@media(max-width:991px){.left-right-wrapper .left-right-content-wrap ul li a{font-size:24px}
 }@media(max-width:767px){.left-right-wrapper .left-right-content-wrap ul li a{font-size:22px}

@@ -8477,6 +8477,7 @@ video {
           letter-spacing: normal;
           text-transform: uppercase;
           text-decoration: none;
+          pointer-events: none;
           /* Large Devices, Wide Screens */
           /* Large Devices, Wide Screens */
           /* Large Devices, Wide Screens */ }

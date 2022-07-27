@@ -1452,6 +1452,7 @@ video{
                     letter-spacing: normal;
                     text-transform: uppercase;
                     text-decoration: none;
+                    pointer-events: none;
                     @include breakpoint(wide){
                         font-size: 28px;
                     }
