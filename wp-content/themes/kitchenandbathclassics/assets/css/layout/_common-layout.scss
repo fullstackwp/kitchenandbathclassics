@@ -1006,8 +1006,12 @@ video{
                     .description{
                         .left{
                             .link{
+                                color: $color__deep_red;
                                 .svg{
-                                    left: 8px;
+                                    // left: 8px;
+                                    path{
+                                        fill: $color__deep_red;
+                                    }
                                 }
                             }
                         }
@@ -1080,6 +1084,7 @@ video{
                         line-height: 1.14;
                         letter-spacing: normal;
                         color: $color__evergreen;
+                        transition: all 0.6s;
                         @include breakpoint(medium){
                             font-size: 12px;
                         }
@@ -1097,6 +1102,9 @@ video{
                             }
                             @include breakpoint(small){
                                 height: 16px;
+                            }
+                            path{
+                                transition: all 0.6s;
                             }
                         }
                     }
