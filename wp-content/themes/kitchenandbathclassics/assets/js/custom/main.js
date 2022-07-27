@@ -93,10 +93,15 @@ jQuery(function ($) {
             this.$scrollDownEl.on('click', this.scrollDown.bind(this));
         },
         scrollDown: function (e) {
-            console.log($(e.currentTarget).attr('href'));
+            
+            
             if( window.location.href.split('#')[0] ==  $(e.currentTarget).attr('href').split('#')[0] ) {
                 if ($(e.currentTarget).attr('href').indexOf("#") != -1) {
                     e.preventDefault();
+                    if ($('body').hasClass("open-menu")) {
+                        $("body").removeClass("open-menu")
+                    }
+
                     var headerHeight = $("#masthead").outerHeight(true);
                     var target = $(e.currentTarget).attr('href');
                     var hash_tag = target.split('#')[1];
@@ -119,7 +124,7 @@ jQuery(function ($) {
                 var hashValue = location.hash;
                 var clean_uri = pageURI.substring(0, pageURI.indexOf("#"));
 
-                window.history.replaceState({}, document.title, clean_uri);
+                // window.history.replaceState({}, document.title, clean_uri);
                 this.$htmlBody.stop().animate({
                     'scrollTop': $(hashValue).offset().top - headerHeight
                 });
