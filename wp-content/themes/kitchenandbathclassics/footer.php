@@ -23,6 +23,7 @@
 						$link_target = ( isset( $consultation_btn['target'] ) ) ? $consultation_btn['target'] : '_self';
 		?>
 					<div class="sticky-book-consultation-wrap">
+						<a href="javascript:void(0);" class="click-link"><span></span></a>
 						<a href="<?php echo $link_url ?>" target="<?php echo $link_target ?>">
 							<?php echo wp_get_attachment_image( $btn_img, 'full', false, '' ); ?>
 						</a>

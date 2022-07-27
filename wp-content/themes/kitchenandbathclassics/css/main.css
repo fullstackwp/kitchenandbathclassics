@@ -7097,10 +7097,52 @@ textarea {
 
 .sticky-book-consultation-wrap {
   position: fixed;
-  right: -8px;
+  right: -175px;
   bottom: 50px;
   width: 280px;
-  z-index: 9; }
+  z-index: 9;
+  transition: all 0.6s; }
+  .sticky-book-consultation-wrap.close-sticky {
+    right: -8px; }
+    .sticky-book-consultation-wrap.close-sticky .click-link {
+      height: 30px;
+      width: 30px;
+      left: 100px; }
+      .sticky-book-consultation-wrap.close-sticky .click-link span {
+        opacity: 1; }
+  .sticky-book-consultation-wrap .click-link {
+    height: 100%;
+    width: 120px;
+    position: absolute;
+    border-radius: 50% 50% 50% 0; }
+    .sticky-book-consultation-wrap .click-link span {
+      background-color: #be0101;
+      border: 4px solid #ffffff;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      transition: all 0s; }
+      .sticky-book-consultation-wrap .click-link span:before {
+        content: '';
+        background-color: #ffffff;
+        height: 15px;
+        width: 2px;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 10px;
+        top: 4px; }
+      .sticky-book-consultation-wrap .click-link span:after {
+        content: '';
+        background-color: #ffffff;
+        height: 15px;
+        width: 2px;
+        transform: rotate(-45deg);
+        position: absolute;
+        left: 10px;
+        top: 4px; }
   .sticky-book-consultation-wrap a {
     display: block; }
 

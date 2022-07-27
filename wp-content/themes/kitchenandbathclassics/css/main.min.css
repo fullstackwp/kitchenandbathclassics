@@ -1086,7 +1086,12 @@ select{border:1px solid #ccc}textarea{width:100%}.consultation-wrapper{padding:3
 #masthead{padding:18px 0;position:-webkit-sticky;position:sticky;top:0;z-index:99;background-color:#fff}
 #masthead .site-branding{position:relative;z-index:9}@media(max-width:767px){#masthead .site-branding a{width:100px}
 }#masthead .header-button{position:relative;z-index:9}@media(max-width:767px){#masthead .header-button{display:none}
-}.logged-in.admin-bar #masthead{top:32px}.sticky-book-consultation-wrap{position:fixed;right:-8px;bottom:50px;width:280px;z-index:9}
+}.logged-in.admin-bar #masthead{top:32px}.sticky-book-consultation-wrap{position:fixed;right:-175px;bottom:50px;width:280px;z-index:9;transition:all .6s}
+.sticky-book-consultation-wrap.close-sticky{right:-8px}.sticky-book-consultation-wrap.close-sticky .click-link{height:30px;width:30px;left:100px}
+.sticky-book-consultation-wrap.close-sticky .click-link span{opacity:1}.sticky-book-consultation-wrap .click-link{height:100%;width:120px;position:absolute;border-radius:50% 50% 50% 0}
+.sticky-book-consultation-wrap .click-link span{background-color:#be0101;border:4px solid #fff;height:30px;width:30px;border-radius:50%;position:absolute;left:0;opacity:0;transition:all 0s}
+.sticky-book-consultation-wrap .click-link span:before{content:'';background-color:#fff;height:15px;width:2px;transform:rotate(45deg);position:absolute;left:10px;top:4px}
+.sticky-book-consultation-wrap .click-link span:after{content:'';background-color:#fff;height:15px;width:2px;transform:rotate(-45deg);position:absolute;left:10px;top:4px}
 .sticky-book-consultation-wrap a{display:block}.site-footer .row{padding:40px 0;border-top:1px solid #707070;border-bottom:1px solid #707070}
 @media(max-width:767px){.site-footer .footer-menu{margin-top:20px}}.site-footer .footer-menu ul{margin:0;padding:0}
 .site-footer .footer-menu ul li{list-style:none}.site-footer .footer-menu ul li a{font-size:12px;font-weight:bold;line-height:1.5;letter-spacing:normal;text-align:left;color:#000;text-decoration:none}

@@ -135,4 +135,9 @@ jQuery(function ($) {
         });
     }, 500);
 
+    // sticky-togggle-class
+    $(".sticky-book-consultation-wrap >.click-link").click(function () {
+        $(".sticky-book-consultation-wrap").toggleClass("close-sticky");
+    });
+
 });
