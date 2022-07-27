@@ -41,7 +41,14 @@ a {
 				}
 				>li{
 					border-left: 2px solid $color__brownish_grey;
-					padding: 0 20px;
+					// padding: 0 20px;
+					padding: 0 50px;
+					@include breakpoint(wide){
+						padding: 0 30px;
+					}
+					@include breakpoint(medium){
+						padding: 0 20px;
+					}
 					@include breakpoint(small){
 						padding: 0;
 						border-left: 0;
