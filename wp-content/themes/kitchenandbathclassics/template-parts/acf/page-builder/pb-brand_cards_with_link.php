@@ -49,8 +49,9 @@ endif;
                         <div class="block-image-link">
                             <a href="<?php echo $_link_url; ?>">
                                 <?php
-                                $feature_img = get_sub_field( '_card_feature_image' );
-                                $logo_img = get_sub_field( '_card_logo_image' );
+                                $feature_img    = get_sub_field( '_card_feature_image' );
+                                $logo_img       = get_sub_field( '_card_logo_image' );
+                                $logo_alignment = get_sub_field( '_card_logo_image_alignment' );
 
                                 if( $feature_img || $logo_img ): ?>
                                     <div class="image-wrap">
@@ -59,7 +60,7 @@ endif;
 
                                         if( $logo_img ):
                                         ?>
-                                            <div class="logo">
+                                            <div class="logo <?php echo ( $logo_alignment && "left" == $logo_alignment ) ? "left" : ""; ?>">
                                                 <?php echo wp_get_attachment_image( $logo_img, 'full', false, array( 'class' => 'svg' ) ); ?>
                                             </div><!--logo-->
                                         <?php endif; ?>
