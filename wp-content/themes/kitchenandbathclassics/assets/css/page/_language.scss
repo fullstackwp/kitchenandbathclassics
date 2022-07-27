@@ -1,0 +1,20 @@
+html[lang="fr-FR"]{
+    .image-block-link-wrapper{
+        .image-link-block{
+            .block-title{
+                h3{
+                    font-size: 18px;
+                    @include breakpoint(wide){
+                        font-size: 16px;
+                    }
+                    @include breakpoint(medium){
+                        font-size: 12px;
+                    }
+                    @include breakpoint(small){
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

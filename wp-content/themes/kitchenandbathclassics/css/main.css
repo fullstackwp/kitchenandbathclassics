@@ -9821,4 +9821,19 @@ input[type="submit"] {
       letter-spacing: normal;
       color: #03363a; }
 
+html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title h3, html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title .h3 {
+  font-size: 18px;
+  /* Large Devices, Wide Screens */
+  /* Large Devices, Wide Screens */
+  /* Large Devices, Wide Screens */ }
+  @media (max-width: 1199px) {
+    html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title h3, html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title .h3 {
+      font-size: 16px; } }
+  @media (max-width: 991px) {
+    html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title h3, html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title .h3 {
+      font-size: 12px; } }
+  @media (max-width: 767px) {
+    html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title h3, html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title .h3 {
+      font-size: 14px; } }
+
 /*# sourceMappingURL=maps/main.css.map */

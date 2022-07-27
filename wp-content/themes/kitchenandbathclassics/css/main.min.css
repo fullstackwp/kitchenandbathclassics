@@ -1570,3 +1570,8 @@ button:active,button:focus,input[type="button"]:active,input[type="button"]:focu
 }.page #primary .entry-content p{font-size:14px;font-weight:300;line-height:1.86;letter-spacing:normal;color:#03363a}
 .page #primary .entry-content ul{margin-left:0;padding-left:10px}.page #primary .entry-content ul li{font-size:14px;font-weight:300;line-height:1.86;letter-spacing:normal;color:#03363a}
 .page #primary .entry-content ol{margin-left:0;padding-left:10px}.page #primary .entry-content ol li{font-size:14px;font-weight:300;line-height:1.86;letter-spacing:normal;color:#03363a}
+html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title h3,html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title .h3{font-size:18px}
+@media(max-width:1199px){html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title h3,html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title .h3{font-size:16px}
+}@media(max-width:991px){html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title h3,html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title .h3{font-size:12px}
+}@media(max-width:767px){html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title h3,html[lang="fr-FR"] .image-block-link-wrapper .image-link-block .block-title .h3{font-size:14px}
+}
