@@ -625,6 +625,9 @@ video{
                         height: 99px;
                         width: 99px;
                     }
+                    &.left{
+                        left: 30px;
+                    }
                 }
             }
             .link{
@@ -726,6 +729,9 @@ video{
                         bottom: 0;
                         left: 0;
                         height: 86px;
+                    }
+                    &.left{
+                        left: 30px;
                     }
                 }
             }
