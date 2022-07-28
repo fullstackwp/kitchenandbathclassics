@@ -9152,6 +9152,67 @@ video {
         font-weight: normal;
         text-transform: none; }
 
+.default-cta-wrapper {
+  background-color: #235c62;
+  padding: 67px 0; }
+  .default-cta-wrapper .col-md-12 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .default-cta-wrapper .col-md-12 .title {
+      max-width: 80%;
+      flex: 0 0 80%;
+      padding: 0 15px;
+      /* Large Devices, Wide Screens */
+      /* Large Devices, Wide Screens */ }
+      @media (max-width: 991px) {
+        .default-cta-wrapper .col-md-12 .title {
+          max-width: 70%;
+          flex: 0 0 70%; } }
+      @media (max-width: 767px) {
+        .default-cta-wrapper .col-md-12 .title {
+          max-width: 100%;
+          flex: 0 0 100%; } }
+      .default-cta-wrapper .col-md-12 .title h2, .default-cta-wrapper .col-md-12 .title .h2 {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 0.74;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        /* Large Devices, Wide Screens */
+        /* Large Devices, Wide Screens */
+        /* Large Devices, Wide Screens */
+        /* Large Devices, Wide Screens */ }
+        @media (max-width: 1199px) {
+          .default-cta-wrapper .col-md-12 .title h2, .default-cta-wrapper .col-md-12 .title .h2 {
+            font-size: 40px; } }
+        @media (max-width: 991px) {
+          .default-cta-wrapper .col-md-12 .title h2, .default-cta-wrapper .col-md-12 .title .h2 {
+            font-size: 32px; } }
+        @media (max-width: 767px) {
+          .default-cta-wrapper .col-md-12 .title h2, .default-cta-wrapper .col-md-12 .title .h2 {
+            font-size: 30px; } }
+        @media (max-width: 479px) {
+          .default-cta-wrapper .col-md-12 .title h2, .default-cta-wrapper .col-md-12 .title .h2 {
+            font-size: 28px; } }
+    .default-cta-wrapper .col-md-12 .button {
+      max-width: 30%;
+      flex: 0 0 30%;
+      padding: 0 15px;
+      /* Large Devices, Wide Screens */
+      /* Large Devices, Wide Screens */ }
+      @media (max-width: 991px) {
+        .default-cta-wrapper .col-md-12 .button {
+          max-width: 30%;
+          flex: 0 0 30%; } }
+      @media (max-width: 767px) {
+        .default-cta-wrapper .col-md-12 .button {
+          max-width: 100%;
+          flex: 0 0 100%; } }
+
 button,
 input[type="button"],
 input[type="reset"],

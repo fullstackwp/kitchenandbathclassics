@@ -2219,3 +2219,60 @@ video{
         }
     }
 }
+.default-cta-wrapper{
+    background-color: $color__dark_green_blue;
+    padding: 67px 0;
+    .col-md-12{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .title{
+            max-width: 80%;
+            flex: 0 0 80%;
+            padding: 0 15px;
+            @include breakpoint(medium){
+                max-width: 70%;
+                flex: 0 0 70%
+            }
+            @include breakpoint(small){
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+            h2{
+                font-family: $font__secondary;
+                font-size: 46px;
+                font-weight: 500;
+                line-height: 0.74;
+                letter-spacing: normal;
+                text-align: left;
+                color: $color__white;
+                @include breakpoint(wide){
+                    font-size: 40px;
+                }
+                @include breakpoint(medium){
+                    font-size: 32px;
+                }
+                @include breakpoint(small){
+                    font-size: 30px;
+                }
+                @include breakpoint(extrasmall){
+                    font-size: 28px;
+                }
+            }
+        }
+        .button{
+            max-width: 30%;
+            flex: 0 0 30%;
+            padding: 0 15px;
+            @include breakpoint(medium){
+                max-width: 30%;
+                flex: 0 0 30%;
+            }
+            @include breakpoint(small){
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+        }
+    }
+}

@@ -87,3 +87,35 @@ input[type="submit"] {
 		color: $color__white;
 	}
 }
+.btn-evergreen{
+	background-color: $color__evergreen;
+	border: 1px solid $color__evergreen;
+	padding: 12px 20px;
+  	border-radius: 22px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: $color__white;
+	@include breakpoint(medium){
+		font-size: 14px;
+	}
+	&:hover{
+		background-color: $color__white;
+		border-color: $color__white;
+		color: $color__evergreen;
+		&:visited,
+		&:focus{
+			background-color: $color__white;
+			border-color: $color__white;
+			color: $color__evergreen;
+		}
+	}
+	&:visited,
+	&:focus{
+		background-color: $color__evergreen;
+		border: 1px solid $color__evergreen;
+		color: $color__white;
+	}
+}
