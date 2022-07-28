@@ -945,6 +945,12 @@ video{
                     padding: 20px 15px;
                 }
                 .left{
+                    max-width: 70%;
+                    flex: 0 0 70%;
+                    @include breakpoint(medium){
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
                     h2{
                         font-size: 20px;
                         font-weight: bold;
@@ -1012,11 +1018,17 @@ video{
                 .right{
                     display: flex;
                     align-items: center;
+                    flex: 0 0 30%;
+                    max-width: 30%;
+                    justify-content: flex-end;
                     @include breakpoint(medium){
                         margin-top: 20px;
                         width: 100%;
                         text-align: center;
                         height: 120px;
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        justify-content: center;
                     }
                     @include breakpoint(small){
                         min-height: inherit;
