@@ -7,6 +7,15 @@ if( have_rows( '_product_row_content') ) :
     <section class="image-block-wrapper bb-1">
         <div class="container">
             <div class="row justify-content-center g-1">
+                <?php
+                if( $_block_desc ):
+                ?>
+                    <div class="col-md-12 p-1">
+                        <div class="note">
+                            <?php echo $_block_desc; ?>
+                        </div><!--note-->
+                    </div>
+                <?php endif; ?>
                 <?php while( have_rows( '_product_row_content') ) : the_row(); 
                     $_image_label = get_sub_field( '_image_label' );
                 ?>
@@ -32,15 +41,7 @@ if( have_rows( '_product_row_content') ) :
                     </div>
                 <?php 
                 endwhile; 
-                
-                if( $_block_desc ):
                 ?>
-                    <div class="col-md-12 p-1">
-                        <div class="note">
-                            <?php echo $_block_desc; ?>
-                        </div><!--note-->
-                    </div>
-                <?php endif; ?>
             </div>
         </div>
     </section><!--image-block-wrapper-->
