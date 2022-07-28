@@ -8332,6 +8332,8 @@ video {
     @media only screen and (min-width: 1525px) {
       .testimonial-wrapper.white-text .right-graphic {
         right: 24%; } }
+    .testimonial-wrapper.white-text .right-graphic img {
+      height: 100%; }
   .testimonial-wrapper.white-text .title-wrap h2, .testimonial-wrapper.white-text .title-wrap .h2 {
     color: #ffffff; }
   .testimonial-wrapper.white-text .content-wrap p {
