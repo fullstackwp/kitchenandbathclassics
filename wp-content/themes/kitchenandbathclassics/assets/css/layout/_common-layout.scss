@@ -1147,10 +1147,10 @@ video{
             position: relative;
             display: flex;
             flex-wrap: wrap;
+            align-items: flex-end;
             margin: 0 -10px;
             @include breakpoint(small){
                 margin: 0 0 15px;
-                display: block;
             }
             .image{
                 box-shadow: 0 3px 6px 0 $color__black-16;
@@ -1163,6 +1163,8 @@ video{
                 }
                 @include breakpoint(small){
                     padding: 0;
+                    flex: 0 0 100%;
+                    max-width: 100%;
                 }
             }
             .description{
@@ -1180,7 +1182,9 @@ video{
                     max-width: 50%;
                 }
                 @include breakpoint(small){
-                    padding: 15px 0 0 ;
+                    padding: 15px 0 0;
+                    flex: 0 0 100%;
+                    max-width: 100%;
                 }
                 .left{
                     h2{
