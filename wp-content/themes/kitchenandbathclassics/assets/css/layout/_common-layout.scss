@@ -945,12 +945,12 @@ video{
                     padding: 20px 15px;
                 }
                 .left{
-                    max-width: 70%;
-                    flex: 0 0 70%;
-                    @include breakpoint(medium){
-                        flex: 0 0 100%;
-                        max-width: 100%;
-                    }
+                    // max-width: 70%;
+                    // flex: 0 0 70%;
+                    // @include breakpoint(medium){
+                    //     flex: 0 0 100%;
+                    //     max-width: 100%;
+                    // }
                     h2{
                         font-size: 20px;
                         font-weight: bold;
