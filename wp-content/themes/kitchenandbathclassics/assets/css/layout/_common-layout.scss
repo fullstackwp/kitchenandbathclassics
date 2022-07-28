@@ -1418,6 +1418,9 @@ video{
     @include breakpoint(small){
         padding: 20px 0 0;
     }
+    +.default-cta-wrapper{
+        margin-top: -20px;
+    }
     .left-graphic{
         position: absolute;
         left: 25%;
@@ -2228,8 +2231,8 @@ video{
         justify-content: center;
         align-items: center;
         .title{
-            max-width: 80%;
-            flex: 0 0 80%;
+            max-width: 75%;
+            flex: 0 0 75%;
             padding: 0 15px;
             @include breakpoint(medium){
                 max-width: 70%;
@@ -2247,6 +2250,7 @@ video{
                 letter-spacing: normal;
                 text-align: left;
                 color: $color__white;
+                text-transform: uppercase;
                 @include breakpoint(wide){
                     font-size: 40px;
                 }
@@ -2262,8 +2266,8 @@ video{
             }
         }
         .button{
-            max-width: 30%;
-            flex: 0 0 30%;
+            max-width: 25%;
+            flex: 0 0 25%;
             padding: 0 15px;
             @include breakpoint(medium){
                 max-width: 30%;

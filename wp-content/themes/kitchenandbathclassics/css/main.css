@@ -8461,6 +8461,8 @@ video {
   @media (max-width: 767px) {
     .testimonial-wrapper {
       padding: 20px 0 0; } }
+  .testimonial-wrapper + .default-cta-wrapper {
+    margin-top: -20px; }
   .testimonial-wrapper .left-graphic {
     position: absolute;
     left: 25%;
@@ -9161,8 +9163,8 @@ video {
     justify-content: center;
     align-items: center; }
     .default-cta-wrapper .col-md-12 .title {
-      max-width: 80%;
-      flex: 0 0 80%;
+      max-width: 75%;
+      flex: 0 0 75%;
       padding: 0 15px;
       /* Large Devices, Wide Screens */
       /* Large Devices, Wide Screens */ }
@@ -9182,6 +9184,7 @@ video {
         letter-spacing: normal;
         text-align: left;
         color: #ffffff;
+        text-transform: uppercase;
         /* Large Devices, Wide Screens */
         /* Large Devices, Wide Screens */
         /* Large Devices, Wide Screens */
@@ -9199,8 +9202,8 @@ video {
           .default-cta-wrapper .col-md-12 .title h2, .default-cta-wrapper .col-md-12 .title .h2 {
             font-size: 28px; } }
     .default-cta-wrapper .col-md-12 .button {
-      max-width: 30%;
-      flex: 0 0 30%;
+      max-width: 25%;
+      flex: 0 0 25%;
       padding: 0 15px;
       /* Large Devices, Wide Screens */
       /* Large Devices, Wide Screens */ }
@@ -9297,6 +9300,34 @@ input[type="submit"] {
   .btn-dark:visited, .btn-dark:focus {
     background-color: #235c62;
     border: 1px solid #235c62;
+    color: #ffffff; }
+
+.btn-evergreen {
+  background-color: #03363a;
+  border: 1px solid #03363a;
+  padding: 12px 60px;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  /* Large Devices, Wide Screens */ }
+  @media (max-width: 991px) {
+    .btn-evergreen {
+      font-size: 14px; } }
+  .btn-evergreen:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #03363a; }
+    .btn-evergreen:hover:visited, .btn-evergreen:hover:focus {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #03363a; }
+  .btn-evergreen:visited, .btn-evergreen:focus {
+    background-color: #03363a;
+    border: 1px solid #03363a;
     color: #ffffff; }
 
 .sticky {
