@@ -1119,6 +1119,145 @@ video{
         }
     }
 }
+.double-block-left-right-link-wrapper{
+    padding: 15px 0;
+    .block-image-link{
+        a{
+            text-decoration: none;
+            display: block;
+            &:hover{
+                .image-wrap{
+                    .description{
+                        .left{
+                            .link{
+                                color: $color__deep_red;
+                                .svg{
+                                    // left: 8px;
+                                    path{
+                                        fill: $color__deep_red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .image-wrap{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+            @include breakpoint(small){
+                margin: 0 0 15px;
+                display: block;
+            }
+            .image{
+                box-shadow: 0 3px 6px 0 $color__black-16;
+                padding: 0 10px;
+                flex: 0 0 60%;
+                max-width: 60%;
+                @include breakpoint(medium){
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+                @include breakpoint(small){
+                    padding: 0;
+                }
+            }
+            .description{
+                width: 100%;
+                padding: 29px 0 0;
+                padding: 0 10px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                flex: 0 0 40%;
+                max-width: 40%;
+                @include breakpoint(medium){
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+                @include breakpoint(small){
+                    padding: 15px 0 0 ;
+                }
+                .left{
+                    h2{
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: $color__black_2;
+                        margin-bottom: 0;
+                        text-transform: uppercase;
+                        @include breakpoint(wide){
+                            font-size: 18px;
+                        }
+                        @include breakpoint(medium){
+                            font-size: 16px;
+                        }
+                        span{
+                            font-weight: 300;
+                            text-transform: none;
+                        }
+                    }
+                    h3{
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: $color__black_2;
+                        margin-bottom: 0;
+                        // padding-right: 15px;
+                        @include breakpoint(wide){
+                            font-size: 18px;
+                            // padding-right: 10px;
+                        }
+                        @include breakpoint(medium){
+                            font-size: 16px;
+                            // padding-right: 5px;
+                        }
+                        @include breakpoint(small){
+                            padding-right: 0;
+                        }
+                    }
+                    .link{
+                        margin-top: 20px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 1.14;
+                        letter-spacing: normal;
+                        color: $color__evergreen;
+                        transition: all 0.6s;
+                        @include breakpoint(medium){
+                            font-size: 12px;
+                        }
+                        @include breakpoint(small){
+                            font-size: 14px;
+                        }
+                        .svg{
+                            width: 8.5px;
+                            height: 16px;
+                            position: relative;
+                            transition: all 0.6s;
+                            left: 5px;
+                            @include breakpoint(medium){
+                                height: 10px;
+                            }
+                            @include breakpoint(small){
+                                height: 16px;
+                            }
+                            path{
+                                transition: all 0.6s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .cta-wrapper{
     position: relative;
     background-color: $color__evergreen;
