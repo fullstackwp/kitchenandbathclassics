@@ -7985,6 +7985,39 @@ video {
         left: 8px; }
     .double-block-description-link-wrapper .block-image-link .image-wrap {
       position: relative; }
+      .double-block-description-link-wrapper .block-image-link .image-wrap .image {
+        position: relative; }
+        .double-block-description-link-wrapper .block-image-link .image-wrap .image .logo {
+          height: 119px;
+          width: 119px;
+          background-color: #03363a;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          right: 30px;
+          bottom: 30px;
+          padding: 15px;
+          cursor: default;
+          /* Large Devices, Wide Screens */
+          /* Large Devices, Wide Screens */ }
+          @media (max-width: 1199px) {
+            .double-block-description-link-wrapper .block-image-link .image-wrap .image .logo {
+              height: 99px;
+              width: 99px; } }
+          @media (max-width: 991px) {
+            .double-block-description-link-wrapper .block-image-link .image-wrap .image .logo {
+              height: 89px;
+              width: 89px;
+              right: 20px;
+              bottom: 20px; } }
+          .double-block-description-link-wrapper .block-image-link .image-wrap .image .logo.left {
+            left: 30px;
+            /* Large Devices, Wide Screens */ }
+            @media (max-width: 991px) {
+              .double-block-description-link-wrapper .block-image-link .image-wrap .image .logo.left {
+                left: 20px; } }
       .double-block-description-link-wrapper .block-image-link .image-wrap img {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
       .double-block-description-link-wrapper .block-image-link .image-wrap .description {
@@ -8205,7 +8238,6 @@ video {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    margin: 0 -10px;
     /* Large Devices, Wide Screens */ }
     @media (max-width: 767px) {
       .double-block-left-right-link-wrapper .block-image-link .image-wrap {

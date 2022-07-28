@@ -892,6 +892,39 @@ video{
         }
         .image-wrap{
             position: relative;
+            .image{
+                position: relative;
+                .logo{
+                    height: 119px;
+                    width: 119px;
+                    background-color: $color__evergreen;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    right: 30px;
+                    bottom: 30px;
+                    padding: 15px;
+                    cursor: default;
+                    @include breakpoint(wide){
+                        height: 99px;
+                        width: 99px;
+                    }
+                    @include breakpoint(medium){
+                        height: 89px;
+                        width: 89px;
+                        right: 20px;
+                        bottom: 20px;
+                    }
+                    &.left{
+                        left: 30px;
+                        @include breakpoint(medium){
+                            left: 20px;
+                        }
+                    }
+                }
+            }
             img{
                 box-shadow: 0 3px 6px 0 $color__black-16;
             }
@@ -1148,7 +1181,7 @@ video{
             display: flex;
             flex-wrap: wrap;
             align-items: flex-end;
-            margin: 0 -10px;
+            // margin: 0 -10px;
             @include breakpoint(small){
                 margin: 0 0 15px;
             }
