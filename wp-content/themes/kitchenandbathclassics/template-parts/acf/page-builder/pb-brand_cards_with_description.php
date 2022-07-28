@@ -21,7 +21,7 @@ if( have_rows( '_brand_desc_cards' ) ):
                     $_link_title    = (isset( $_card_link_arr['title'] ) && $_card_link_arr['title']) ? $_card_link_arr['title'] : false;;
                     $_link_target   = ( isset($_card_link_arr['target']) ) ? $_card_link_arr['target'] : '_self';
                 ?>
-                    <div class="col-md-<?php echo $column; ?> p-1">
+                    <div class="col-md-<?php echo $column; ?> p-2">
                         <div class="block-image-link">
                             <a href="<?php echo $_link_url; ?>">
                                 <div class="image-wrap">
