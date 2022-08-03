@@ -8136,6 +8136,8 @@ video {
   .triple-block-description-link-wrapper .block-image-link a {
     text-decoration: none;
     display: block; }
+    .triple-block-description-link-wrapper .block-image-link a:hover .image-wrap .image > img {
+      transform: scale(1.1); }
     .triple-block-description-link-wrapper .block-image-link a:hover .image-wrap .description .left .link {
       color: #be0101; }
       .triple-block-description-link-wrapper .block-image-link a:hover .image-wrap .description .left .link .svg path {
@@ -8147,7 +8149,10 @@ video {
       .triple-block-description-link-wrapper .block-image-link .image-wrap {
         margin-bottom: 15px; } }
     .triple-block-description-link-wrapper .block-image-link .image-wrap .image {
-      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      overflow: hidden; }
+      .triple-block-description-link-wrapper .block-image-link .image-wrap .image > img {
+        transition: all 0.6s; }
     .triple-block-description-link-wrapper .block-image-link .image-wrap .description {
       width: 100%;
       padding: 29px 0 0;

@@ -350,6 +350,44 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_62e22d26166e7",
+                            "label": "Form Title",
+                            "name": "_form_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62e22d2e166e8",
+                            "label": "Form Description",
+                            "name": "_form_description",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
                             "key": "field_62d04fe74a5fd",
                             "label": "HubSpot Script",
                             "name": "_hubspot_script",
@@ -937,6 +975,86 @@
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_62e26b4ac6aa7": {
+                    "key": "layout_62e26b4ac6aa7",
+                    "name": "default_call_to_action",
+                    "label": "Default Call To Action",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62e26b51c6aa8",
+                            "label": "Section ID",
+                            "name": "_default_cta_sectionid",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62e26b61c6aa9",
+                            "label": "Block Background Color",
+                            "name": "_default_cta_block_background_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_62e26b78c6aaa",
+                            "label": "Title",
+                            "name": "_default_cta_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62e26b82c6aab",
+                            "label": "Button",
+                            "name": "_default_cta_button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -3291,5 +3409,5 @@
     "active": true,
     "description": "Page builder for tapsbath theme.",
     "show_in_rest": 0,
-    "modified": 1658949284
+    "modified": 1659005837
 }
