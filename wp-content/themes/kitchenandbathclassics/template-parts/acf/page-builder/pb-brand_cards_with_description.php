@@ -13,7 +13,7 @@ if( have_rows( '_brand_desc_cards' ) ):
 ?>
     <section <?php echo $section_id; ?> class="<?php echo $section_class; ?>">
         <div class="container">
-            <div class="row g-1">
+            <div class="row g-3">
                 <?php 
                 while( have_rows( '_brand_desc_cards' ) ): the_row(); 
                     $_card_link_arr = get_sub_field( '_card_link' );
@@ -27,9 +27,11 @@ if( have_rows( '_brand_desc_cards' ) ):
                                 <div class="image-wrap">
                                     <?php 
                                     if( $_feature_img = get_sub_field( '_card_feature_image' ) ): 
-                                        echo ( 4 == $column  ) ? '<div class="image">' : '';
+                                        // echo ( 4 == $column  ) ? '<div class="image">' : '';
+                                        echo '<div class="image">';
                                         echo wp_get_attachment_image( $_feature_img, 'full', false, '' );
-                                        echo ( 4 == $column  ) ? '</div>' : '';
+                                        // echo ( 4 == $column  ) ? '</div>' : '';
+                                        echo '</div>';
                                     endif;
                                     ?>
                                     <div class="description">

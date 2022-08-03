@@ -10,7 +10,7 @@ $section_id = ( get_sub_field( '_image_card_sectionid' ) ) ? sprintf( 'id="%s"',
 ?>
 <section <?php echo $section_id; ?> class="image-block-link-wrapper <?php echo $border_classes; ?>">
     <div class="container">
-        <div class="row align-items-center justify-content-center g-1">
+        <div class="row align-items-center justify-content-center g-0">
             <?php if( $_heading = get_sub_field( '_image_card_section_heading' ) ): ?>
                 <div class="col-md-12">
                     <div class="title-wrap">

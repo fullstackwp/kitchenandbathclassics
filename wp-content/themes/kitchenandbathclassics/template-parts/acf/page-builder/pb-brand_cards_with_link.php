@@ -13,7 +13,7 @@ endif;
 ?>
 <section <?php echo $section_id ?> class="<?php echo $section_class; ?>">
     <div class="container">
-        <div class="row g-1">
+        <div class="row g-2">
             <?php if( $show_desc && ( $section_heading || $section_desc ) ) : ?>
                 <div class="col-md-12 p-1">
                     <?php if( $section_heading ): ?>

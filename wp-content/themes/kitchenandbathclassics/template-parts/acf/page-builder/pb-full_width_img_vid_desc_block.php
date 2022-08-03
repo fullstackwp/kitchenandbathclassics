@@ -39,7 +39,9 @@ $section_id     = ( get_sub_field( '_fullwidth_desc_imgvid_sectionid' ) ) ? spri
                                 if ( have_rows( '_fullwidth_desc_image_fields' ) ) :
                                     while ( have_rows( '_fullwidth_desc_image_fields' ) ) : the_row();
                                         if( $_img = get_sub_field( '_image' ) ) :
-                                                echo wp_get_attachment_image( $_img, 'full', false, '' );
+                                            echo '<div class="image">';
+                                            echo wp_get_attachment_image( $_img, 'full', false, '' );
+                                            echo '</div>';
                                         endif;
                                     endwhile;
                                 endif;
